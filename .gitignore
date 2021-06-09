@@ -1,4 +1,4 @@
-.gradle/
+gradle/
 .idea
 gradlew.bat
 settings.gradle
