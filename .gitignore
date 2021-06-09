@@ -1,5 +1,8 @@
-.gradle
-/build/
+# Ignore gradle files
+.gradle/
+build/
+
+
 .idea
 gradlew.bat
 settings.gradle
