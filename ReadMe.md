@@ -19,8 +19,9 @@ ______________________________
 
 ## 그리디
 
-[저울](https://www.acmicpc.net/problem/2437), &nbsp;[사과나무](https://www.acmicpc.net/problem/19539), &nbsp;[~~배~~](https://www.acmicpc.net/problem/1092), &nbsp;[수 묶기](https://www.acmicpc.net/problem/1744),
-&nbsp;[~~연산자 끼워넣기~~](https://www.acmicpc.net/problem/15658), &nbsp;, 
+[저울](https://www.acmicpc.net/problem/2437), &nbsp;[사과나무](https://www.acmicpc.net/problem/19539), &nbsp;[~~
+배~~](https://www.acmicpc.net/problem/1092), &nbsp;[수 묶기](https://www.acmicpc.net/problem/1744), &nbsp;[~~연산자
+끼워넣기~~](https://www.acmicpc.net/problem/15658), &nbsp;,
 <br/><br/><br/><br/><br/>
 
 ## 완전탐색
@@ -41,7 +42,8 @@ ______________________________
 ## 이분 탐색(Binary Search)
 
 [가장 긴 증가하는 부분 수열3](https://www.acmicpc.net/problem/12738), &nbsp;[휴게소 세우기](https://www.acmicpc.net/problem/1477),
-&nbsp;[랜선 자르기](https://www.acmicpc.net/problem/1654)
+&nbsp;[랜선 자르기](https://www.acmicpc.net/problem/1654), &nbsp;[~~K 번째 수~~](https://www.acmicpc.net/problem/1300),
+&nbsp;[~~괄호 추가하기~~](https://www.acmicpc.net/problem/16637)
 
 <br/><br/><br/><br/><br/>
 
