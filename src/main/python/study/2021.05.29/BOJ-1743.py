@@ -36,3 +36,4 @@ for i in range(N):
             dfs(i, j)
             size = max(result, size)
 print(size)
+# https://li-fo.tistory.com/66
