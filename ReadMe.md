@@ -58,7 +58,7 @@ ______________________________
 <br/><br/><br/><br/><br/>
 
 ## 그래프
-[네트워크 연결](https://www.acmicpc.net/problem/1922), &nbsp; [~~녹색 옷 입은 애가 젤다지?~~](https://www.acmicpc.net/problem/4485)
+[네트워크 연결](https://www.acmicpc.net/problem/1922), &nbsp; [~~녹색 옷 입은 애가 젤다지?~~](https://www.acmicpc.net/problem/4485), &nbsp;, [최소비용 구하기 2](https://www.acmicpc.net/problem/11779)
 
 ##### Heading5
 

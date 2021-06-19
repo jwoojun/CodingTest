@@ -8,7 +8,7 @@ INF = sys.maxsize
 dx = [0, 0, 1, -1]
 dy = [1, -1, 0, 0]
 
-count = 0
+count = 1
 
 
 def dijkstra():
@@ -32,7 +32,7 @@ def dijkstra():
                     heapq.heappush(q, (new_cost, nx, ny))
 
 while 1:
-    N = int(input())
+    N = int(input().rstrip())
     if N == 0:
         break
 

@@ -1,5 +1,5 @@
+# 회문은 회문아니야!!
 letter = input()
-
 
 def check_palindrome(letter):
     for i in range(len(letter) // 2):
