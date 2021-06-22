@@ -5,7 +5,7 @@ input = sys.stdin.readline
 
 N, M, K, X = map(int, input().split())
 graph = [[] for _ in range(M + 1)]
-
+distance = [-1] * (N + 1)
 
 for i in range(M):
     x, y = map(int, input().split())

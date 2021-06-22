@@ -6,65 +6,50 @@ N, S = map(int, input().split())
 numbers = list(map(int, input().split()))
 min_length = 1e9
 
-def two_pointer(numbers, target):
-    global min_length
+
+def subSum(numbers, target, N):
+    sub_sum = 0
     start = end = 0
-    sum_ = 0
+    min_length = 1e9
 
     while 1:
-        if sum_ < target:
-            sum_ += numbers[end]
-            end += 1
-
-        if sum_ >= target:
-            min_length = min(min_length, (end - start))
-            sum_ -= numbers[start]
+        if sub_sum >= target:
+            min_length = min(min_length, end - start)
+            sub_sum -= numbers[start]
             start += 1
 
-        if end == len(numbers) :
+        elif end == len(numbers):
             break
-        print(start, end, sum_, min_length)
+
+        else:
+            sub_sum += numbers[end]
+            end += 1
     return min_length
 
 
-if two_pointer(numbers, S) == 1e9 :
+if subSum(numbers, S, N) == 1e9:
     print(0)
     exit()
-
-print(two_pointer(numbers, S))
-
+print(subSum(numbers, S, N))
 
 
 
-# # 부분합
-# import sys
-#
-# input = sys.stdin.readline
-# N, S = map(int, input().split())
-# numbers = list(map(int, input().split()))
-# min_length = 1e9
-#
-# def two_pointer(numbers, target):
-#     global min_length
-#     start = end = 0
-#     sum_ = 0
-#
-#     while 1:
-#         if sum_ >= target:
-#             min_length = min(min_length, (end - start))
-#             sum_ -= numbers[start]
-#             start += 1
-#         elif end == len(numbers) :
-#             break
-#         else :
-#             sum_ += numbers[end]
-#             end += 1
-#
-#     return min_length
-#
-#
-# if two_pointer(numbers, S) == 1e9 :
-#     print(0)
-#     exit()
-#
-# print(two_pointer(numbers, S))
+sub_sum=numbers[0]
+end = 0
+answer = 1e9
+for start in range(N) :
+    while sub_sum < S and end < N :
+        end += 1
+        if end == N :
+            break
+
+        sub_sum += numbers[end]
+
+    if sub_sum >= S :
+        answer = min(answer, end-start+1)
+    sub_sum -= numbers[start]
+
+if answer == 1e9 :
+    print(0)
+    exit()
+print(answer)
