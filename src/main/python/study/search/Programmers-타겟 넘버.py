@@ -1,6 +1,5 @@
 from collections import deque
 
-
 def solution(numbers, target):
     answer = count = 0
     q = deque([(0, count)])
