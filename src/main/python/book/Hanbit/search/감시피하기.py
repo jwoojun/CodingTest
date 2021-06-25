@@ -12,6 +12,7 @@ for i in range(N) :
         if board[i][j] == 'X' :
             spaces.append((i,j))
 
+
 def watch(x, y, direction) :
     if direction == 0 :
         while y >= 0 :

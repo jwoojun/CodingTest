@@ -1,37 +1,32 @@
 import sys
 from collections import deque
-
 input = sys.stdin.readline
 
 N, M, K, X = map(int, input().split())
-graph = [[] for _ in range(M + 1)]
-distance = [-1] * (N + 1)
 
-for i in range(M):
-    x, y = map(int, input().split())
-    graph[x].append(y)
-distance = [-1] * (N + 1)
-distance[X] = 0
+cities_distance = [-1]*(N+1)
+city_map = [[] for _ in range(N+1)]
+for i in range(M) :
+    A, B = map(int, input().split())
+    city_map[A].append(B)
 
-q = deque([X])
-while q:
-    now = q.popleft()
 
-    # 현재 도시와 연결된 도시 중
-    for next_node in graph[now]:
+cities_distance[X] = 0
+q= deque([])
+q.append(X)
+while q :
+    now_city = q.popleft()
+    for linked_city in city_map[now_city] :
+        if cities_distance[linked_city] == - 1:
+            cities_distance[linked_city] = cities_distance[now_city] + 1
+            q.append(linked_city)
 
-        # 아직 방문하지 않았을 경우
-        if distance[next_node] == -1:
+flag = False
 
-            # 해당 도시를 방문
-            distance[next_node] = distance[now] + 1
-            q.append(next_node)
-
-check = False
-for i in range(1, N+1) :
-    if distance[i] == K :
+for i in range(len(cities_distance)) :
+    if cities_distance[i] == K :
+        flag = True
         print(i)
-        check= True
 
-if check == False :
+if not flag :
     print(-1)
