@@ -1,3 +1,7 @@
+import java.util.Optional;
+
+import static java.lang.System.out;
+
 public class Main {
     public static int[] d;
 
@@ -22,4 +26,11 @@ public class Main {
         }
         return d[n];
     }
+    public static void main(String args []){
+        String a = null;
+        Optional.ofNullable(a)
+                .ifPresentOrElse(out::println, NullPointerException::new);
+
+    }
+
 }

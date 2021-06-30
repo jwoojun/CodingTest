@@ -19,16 +19,18 @@ ______________________________
 
 ## 그리디
 
-[저울](https://www.acmicpc.net/problem/2437), &nbsp;[사과나무](https://www.acmicpc.net/problem/19539), &nbsp;[~~
-배~~](https://www.acmicpc.net/problem/1092), &nbsp;[수 묶기](https://www.acmicpc.net/problem/1744), &nbsp;[~~연산자
-끼워넣기~~](https://www.acmicpc.net/problem/15658), &nbsp;, [~~주유소~~](https://www.acmicpc.net/problem/13305), &nbsp;[~~단어 수학~~](https://www.acmicpc.net/problem/1339)
+[저울](https://www.acmicpc.net/problem/2437), &nbsp;[사과나무](https://www.acmicpc.net/problem/19539), &nbsp;
+[~~배~~](https://www.acmicpc.net/problem/1092), &nbsp;[수 묶기](https://www.acmicpc.net/problem/1744), &nbsp;[~~연산자
+끼워넣기~~](https://www.acmicpc.net/problem/15658), &nbsp;, [~~주유소~~](https://www.acmicpc.net/problem/13305), &nbsp;[~~단어
+수학~~](https://www.acmicpc.net/problem/1339)
 <br/><br/><br/><br/><br/>
 
 ## 완전탐색
-[문서 검색](https://www.acmicpc.net/problem/1543), &nbsp;[세 개의 소수 문제](https://www.acmicpc.net/problem/11502),
-&nbsp;[감소하는 수](https://www.acmicpc.net/problem/1038), &nbsp;[~~미친로봇~~](https://www.acmicpc.net/problem/1405), &nbsp;[~~
-램프~~](https://www.acmicpc.net/problem/1034), &nbsp;[~~부등호~~](https://www.acmicpc.net/problem/2529),
-&nbsp; [숨바꼭질](https://www.acmicpc.net/problem/1697), &nbsp; [미로 탐색](https://www.acmicpc.net/problem/2178)
+
+[문서 검색](https://www.acmicpc.net/problem/1543), &nbsp;[세 개의 소수 문제](https://www.acmicpc.net/problem/11502), &nbsp;[~~두 동전~~](https://www.acmicpc.net/problem/16197),
+&nbsp;[감소하는 수](https://www.acmicpc.net/problem/1038), &nbsp;[~~미친로봇~~](https://www.acmicpc.net/problem/1405), &nbsp;[~~램프~~](https://www.acmicpc.net/problem/1034), &nbsp;[~~부등호~~](https://www.acmicpc.net/problem/2529),
+&nbsp; [숨바꼭질](https://www.acmicpc.net/problem/1697), &nbsp; [미로 탐색](https://www.acmicpc.net/problem/2178), &nbsp; [~~점프점프~~](https://www.acmicpc.net/problem/11060),
+&nbsp; [스타트와 링크](https://www.acmicpc.net/problem/14889)
 
 <br/><br/><br/><br/><br/>
 
@@ -64,7 +66,7 @@ ______________________________
 ## 그래프
 
 [네트워크 연결](https://www.acmicpc.net/problem/1922), &nbsp; [~~녹색 옷 입은 애가 젤다지?~~](https://www.acmicpc.net/problem/4485),
-&nbsp;, [최소비용 구하기 2](https://www.acmicpc.net/problem/11779)
+&nbsp;, [최소비용 구하기 2](https://www.acmicpc.net/problem/11779), &nbsp;[~~선수과목~~](https://www.acmicpc.net/problem/14567)
 
 ##### Heading5
 
