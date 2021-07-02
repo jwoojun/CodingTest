@@ -1,7 +1,7 @@
 # Algorithm Study
 
 ______________________________
-이 문서는 2021년 4월 24일부터 시작한 알고리즘 스터디와 관련된 정보를 담은 문서입니다.<br/><br/>
+2021년 4월 24일부터 시작한 알고리즘 스터디와 관련된 정보를 담은 문서입니다.<br/><br/>
 날짜 : 토요일 오전 10시 ~ 오후 1시(3시간)<br/>
 장소 : 강남역<br/><br/>
 
@@ -10,10 +10,6 @@ ______________________________
 ~~이재빈~~, 이정기, 송다인, 정준우, 조원준
 
 <br/><br/>
-
-# 문제
-
-백준 온라인 저지를 기본으로 하되 필요에 따라 프로그래머스나 다른 사이트의 문제를 추가로 풉니다.
 
 <br/><br/><br/>
 
@@ -27,10 +23,12 @@ ______________________________
 
 ## 완전탐색
 
-[문서 검색](https://www.acmicpc.net/problem/1543), &nbsp;[세 개의 소수 문제](https://www.acmicpc.net/problem/11502), &nbsp;[~~두 동전~~](https://www.acmicpc.net/problem/16197),
-&nbsp;[감소하는 수](https://www.acmicpc.net/problem/1038), &nbsp;[~~미친로봇~~](https://www.acmicpc.net/problem/1405), &nbsp;[~~램프~~](https://www.acmicpc.net/problem/1034), &nbsp;[~~부등호~~](https://www.acmicpc.net/problem/2529),
-&nbsp; [숨바꼭질](https://www.acmicpc.net/problem/1697), &nbsp; [미로 탐색](https://www.acmicpc.net/problem/2178), &nbsp; [~~점프점프~~](https://www.acmicpc.net/problem/11060),
-&nbsp; [스타트와 링크](https://www.acmicpc.net/problem/14889)
+[문서 검색](https://www.acmicpc.net/problem/1543), &nbsp;[세 개의 소수 문제](https://www.acmicpc.net/problem/11502), &nbsp;[~~두
+동전~~](https://www.acmicpc.net/problem/16197), &nbsp;[감소하는 수](https://www.acmicpc.net/problem/1038), &nbsp;[~~
+미친로봇~~](https://www.acmicpc.net/problem/1405), &nbsp;[~~램프~~](https://www.acmicpc.net/problem/1034), &nbsp;[~~
+부등호~~](https://www.acmicpc.net/problem/2529), &nbsp; [숨바꼭질](https://www.acmicpc.net/problem/1697),
+&nbsp; [미로 탐색](https://www.acmicpc.net/problem/2178), &nbsp; [~~점프점프~~](https://www.acmicpc.net/problem/11060),
+&nbsp; [~~스타트와 링크~~](https://www.acmicpc.net/problem/14889)
 
 <br/><br/><br/><br/><br/>
 
@@ -57,9 +55,6 @@ ______________________________
 [~~회문은 회문아니야!!~~](https://www.acmicpc.net/problem/15927), &nbsp;[~~팰린드롬 만들기~~](https://www.acmicpc.net/problem/1213)
 ______________________________
 
-##### Heading5
-
-###### Heading6
 
 <br/><br/><br/><br/><br/>
 
@@ -67,14 +62,10 @@ ______________________________
 
 [네트워크 연결](https://www.acmicpc.net/problem/1922), &nbsp; [~~녹색 옷 입은 애가 젤다지?~~](https://www.acmicpc.net/problem/4485),
 &nbsp;, [최소비용 구하기 2](https://www.acmicpc.net/problem/11779), &nbsp;[~~선수과목~~](https://www.acmicpc.net/problem/14567)
-
-##### Heading5
-
-###### Heading6
-
 <br/><br/><br/><br/><br/>
 
-## 심화알고리즘
+## 구현
+[~~어른상어~~](https://www.acmicpc.net/problem/19237)
 
 ______________________________
 
