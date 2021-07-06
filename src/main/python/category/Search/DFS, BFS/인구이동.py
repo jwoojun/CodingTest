@@ -34,8 +34,10 @@ def bfs(index, x, y):
                     count += 1
                     united.append((nx, ny))
 
-    for i, j in united :
-        data[i][j] = sum_//count
+    for i, j in united:
+        data[i][j] = sum_ // count
+    return count
+
 
 total_count = 0
 
@@ -46,8 +48,10 @@ while True:
         for j in range(N):
             if visited[i][j] == -1:
                 bfs(index, i, j)
-                index += 1
-    if index == N * N:
+                index +=1
+                print(index)
+    print(index)
+    if index == N*N :
         break
     total_count += 1
 print(total_count)

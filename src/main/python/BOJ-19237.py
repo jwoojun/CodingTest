@@ -26,12 +26,6 @@ for i in range(M):
 for i in shark_direction_map:
     print(i)
 
-
-
-
-
-
-
 for i in each_shark_direction:
     print(i)
 

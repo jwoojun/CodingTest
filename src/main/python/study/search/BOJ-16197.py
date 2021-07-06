@@ -9,6 +9,9 @@ dx = [0, 0, 1, -1]
 dy = [1, -1, 0, 0]
 
 
+
+
+
 def bfs(coin):
     while coin:
         x1, y1, x2, y2, count = coin.popleft()
