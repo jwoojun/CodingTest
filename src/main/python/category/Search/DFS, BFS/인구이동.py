@@ -28,6 +28,7 @@ def bfs(index, x, y):
             ny = y + dy[i]
             if 0 <= nx < N and 0 <= ny < N and visited[nx][ny] == -1:
                 if L <= abs(data[nx][ny] - data[x][y]) <= R:
+                    flag = True
                     q.append((nx, ny))
                     visited[nx][ny] = index
                     sum_ += data[nx][ny]
@@ -43,6 +44,8 @@ total_count = 0
 
 while True:
     index = 0
+    flag =False
+
     visited = [[-1] * N for _ in range(N)]
     for i in range(N):
         for j in range(N):
@@ -50,8 +53,8 @@ while True:
                 bfs(index, i, j)
                 index +=1
                 print(index)
-    print(index)
-    if index == N*N :
+    print(flag)
+    if not flag  :
         break
     total_count += 1
 print(total_count)
