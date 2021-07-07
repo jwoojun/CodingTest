@@ -4,7 +4,7 @@ input = sys.stdin.readline
 N, K = map(int, input().split())
 
 
-# 잘못된 풀이
+# 잘못된 풀이(1)
 # dp_table = [[0] * (K + 1) for _ in range(N + 1)]
 # bag = [[0, 0]]
 # for i in range(N) :
