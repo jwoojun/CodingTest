@@ -15,11 +15,11 @@ while start <= end:
         # 해당 숫자(mid)보다 작거나 같은 숫자들을 전부 찾아줌으로써 mid가 몇번째에 위치한 숫자인지 알아낼 수 있다.
         count += min(mid // i, N)
     if count >= k:
-        answer = mid
+        ans = mid
         end = mid-1
     else:
         start = mid+1
-print(answer)
+print(ans)
 
 # dp[i]= max(dp[i], dp[i-1]+1)
 

@@ -12,9 +12,9 @@ learn = [False] * 26
 for basic_word in ('a','c','i','n', 't') :
     learn[ord(basic_word)-ord('a')] = True
 
-answer= None
+ans= None
 def dfs(alphabet_index, count) :
-    global answer
+    global ans
 
     if count == K-5 :
         reable_word = 0
@@ -35,7 +35,7 @@ def dfs(alphabet_index, count) :
             dfs(alphabet, count+1)
             learn[alphabet] = False
 dfs(0,0)
-print(answer)
+print(ans)
 
 
 

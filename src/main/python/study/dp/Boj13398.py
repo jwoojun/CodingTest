@@ -7,6 +7,16 @@ numbers = list(map(int, input().split()))
 dp = [[0, 0] for i in range(N)]
 dp[0][0] = numbers[0]
 
+
+max_value = -1e9
+
+if N > 1 :
+    for i in range(1, N) :
+        dp[i][0] = max(dp[i-1][1]+numbers[i], numbers[i] )
+
+
+
+
 m = -999999999
 if N > 1 :
     for i in range(1, N):

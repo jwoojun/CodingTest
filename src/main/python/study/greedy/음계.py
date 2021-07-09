@@ -1,11 +1,11 @@
 # 풀이1
 string = list(map(str, input().split()))
-answer = ''.join(string)
-if int(answer) == 12345678:
+ans = ''.join(string)
+if int(ans) == 12345678:
     print('ascending')
-if int(answer) == 87654321:
+if int(ans) == 87654321:
     print('descending')
-if int(answer) != 12345678 and int(answer) != 87654321 :
+if int(ans) != 12345678 and int(ans) != 87654321 :
     print('mixed')
 
 

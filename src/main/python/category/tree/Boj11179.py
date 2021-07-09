@@ -23,5 +23,5 @@ def cal(lst):
 
 
 number = makeBin(input)
-answer = deleteZero(number)
-print(cal(answer))
+ans = deleteZero(number)
+print(cal(ans))

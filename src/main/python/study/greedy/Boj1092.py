@@ -15,7 +15,7 @@ deque = deque(weights)
 
 result = []
 count = 0
-answer = 0
+ans = 0
 switch = False
 if cranes[0] < weights[0]:
     print(-1)
@@ -33,11 +33,11 @@ else:
             #     switch = False
             #     break
         if count == len(cranes):
-            answer += 1
+            ans += 1
             count = 0
         #  6 10
         #  9
         if len(deque) == 0:
-            answer += 1
-            print(answer)
+            ans += 1
+            print(ans)
             break

@@ -9,7 +9,7 @@ for i in range(M):
     a, b = map(int, input().split())
     graph[a][b] = 1
     graph[b][a] = 1
-answer = 0
+ans = 0
 
 
 def graph3(lst):
@@ -36,5 +36,5 @@ def dfs(start):
 for i in range(1, N + 1):
     if not visited[i]:
         dfs(i)
-        answer += 1
-print(answer)
+        ans += 1
+print(ans)

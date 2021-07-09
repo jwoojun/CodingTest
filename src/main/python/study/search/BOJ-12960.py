@@ -63,12 +63,12 @@ print(checkAlpha(alpha_list))
 q = deque()
 q.append((0, alpha_list))
 
-answer = 1e9
+ans = 1e9
 
 while 1:
     count, lst = q.popleft()
     if checkAlpha(lst):
-        answer = count
+        ans = count
 
     for i in range(3):
         if len(lst[i][1]) != 0:

@@ -27,21 +27,21 @@ Z = (int((int(Y) / int(X)) * 100))
 
 start = 1
 end = X
-answer = 0
+ans = 0
 
 while(start <= end) :
 
     if (X == Y) :
-        answer = -1
+        ans = -1
     mid = (start+end)//2
 
     if(int((int(Y+mid)/int(X+mid)) * 100)) == Z :
         start = mid+1
     else :
         end = mid-1
-        answer = int((int(Y + mid) / int(X + mid)) * 100)
+        ans = int((int(Y + mid) / int(X + mid)) * 100)
 
-if (answer == Z) :
+if (ans == Z) :
     print(-1)
 else :
     print(mid)

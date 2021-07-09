@@ -12,23 +12,23 @@ for i in numbers:
         right.append(i)
 
 left.sort(), right.sort(reverse=True)
-answer = []
+ans = []
 
 if len(left) % 2 == 0:
     for i in range(0, len(left) - 1, 2):
-        answer.append(left[i] * left[i + 1])
+        ans.append(left[i] * left[i + 1])
 else:
     for i in range(0, len(left) - 1, 2):
-        answer.append(left[i] * left[i + 1])
-    answer.append(left[-1])
+        ans.append(left[i] * left[i + 1])
+    ans.append(left[-1])
 
 if len(right) % 2 == 0:
     for i in range(0, len(right) - 1, 2):
-        answer.append(right[i] * right[i + 1])
+        ans.append(right[i] * right[i + 1])
 
 else:
     for i in range(0, len(right) - 1, 2):
-        answer.append(right[i] * right[i + 1])
-    answer.append(right[-1])
-answer.extend(mid)
-print(sum(answer))
+        ans.append(right[i] * right[i + 1])
+    ans.append(right[-1])
+ans.extend(mid)
+print(sum(ans))

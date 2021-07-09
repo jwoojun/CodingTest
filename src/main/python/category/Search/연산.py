@@ -5,16 +5,16 @@ for i in range(TC):
     visited, queue = [False]*1000001, deque()
     queue.append((N, 0))
     visited[N] = True
-    q, answer = queue.popleft()
+    q, ans = queue.popleft()
     if q == M:
         break
-    print(q, answer)
+    print(q, ans)
     while True:
 
         check = q + 1
         print(q)
         if not visited[check] and 0 < check <= 1000000:
-            queue.append((check, answer+1))
+            queue.append((check, ans + 1))
             visited[check] = True
 
 
@@ -22,20 +22,20 @@ for i in range(TC):
 
         check = q - 1
         if not visited[check] and 0 < check <= 1000000:
-            queue.append((check, answer+1))
+            queue.append((check, ans + 1))
             visited[check] = True
 
 
         check = q * 2
         if not visited[check] and 0 < check <= 1000000:
-            queue.append((check, answer+1))
+            queue.append((check, ans + 1))
             visited[check] = True
 
 
 
         check = q - 10
         if not visited[check] and 0 < check <= 1000000:
-            queue.append((check, answer+1))
+            queue.append((check, ans + 1))
             visited[check] = True
             q = queue[0][0]
             queue.popleft()
@@ -43,4 +43,4 @@ for i in range(TC):
                 break
 
 
-    print("#{} {}".format(i+1, answer))
+    print("#{} {}".format(i + 1, ans))

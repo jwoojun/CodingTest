@@ -13,7 +13,7 @@ for i in range(N):
 dx = [0, 0, 1, -1]
 dy = [1, -1, 0, 0]
 
-answer = 0
+ans = 0
 
 
 def virus(x, y):
@@ -36,7 +36,7 @@ def safety():
 
 
 def dfs(count):
-    global answer
+    global ans
     if count == 3:
         for i in range(N):
             for j in range(M):
@@ -60,4 +60,4 @@ def dfs(count):
 
 
 dfs(0)
-print(answer)
+print(ans)

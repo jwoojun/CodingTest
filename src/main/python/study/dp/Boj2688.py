@@ -32,10 +32,10 @@ def c(x):
 
 
 count = 0
-answer = 0
+ans = 0
 while count < 1000000:
     if (c(count)):
-        answer += 1
+        ans += 1
 
     count += 1
-print(answer)
+print(ans)

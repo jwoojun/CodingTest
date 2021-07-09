@@ -2,7 +2,7 @@ from collections import defaultdict, deque
 
 # tickets= [["ICN", "SFO"], ["ICN", "ATL"], ["SFO", "ATL"], ["ATL", "ICN"], ["ATL","SFO"]]
 tickets = [["ICN", "A"], ["ICN", "B"], ["B", "ICN"]]
-answer = []
+ans = []
 
 def makeList(tickets, path):
     for i in range(len(tickets)):
@@ -18,22 +18,22 @@ def sorting(dic):
 def bfs(path):
     start = 'ICN'
     q = deque()
-    answer.append(start)
+    ans.append(start)
     while q:
         if len(path[start]) == 0 :
             break
         for i in range(0, len(path[start])):
             if path[start][i] in path:
                 arrive = path[start].pop(i)
-                answer.append(arrive)
+                ans.append(arrive)
                 start = arrive
 
-    return answer
+    return ans
 
 
 def solution(tickets):
     path = defaultdict(list)
-    global answer
+    global ans
     path = makeList(tickets, path)
     sorting(path)
     answer = bfs(path)

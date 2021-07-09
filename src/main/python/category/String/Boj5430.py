@@ -12,7 +12,7 @@ def popleft(x):
     return x.pop(0)
 
 
-answer = []
+ans = []
 for i in range(int(input())):
     p = list(input().rstrip())
     n = int(input())

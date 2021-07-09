@@ -6,7 +6,7 @@ input = sys.stdin.readline
 
 n = int(input())
 prime_numbers = [True] * (n+1)
-answer = 0
+ans = 0
 # 에르난데스의 체
 for i in range(2, int(math.sqrt(n)+1)) :
     j =2
@@ -27,14 +27,14 @@ for i in range(len(numbers)) :
     interval_num = 0
     interval_num += numbers[i]
     if interval_num == n :
-        answer += 1
+        ans += 1
     for j in range(i+1, len(numbers)) :
 
         interval_num += numbers[j]
 
         if interval_num <= n :
             if interval_num == n :
-                answer +=1
+                ans +=1
 
             # 가장 작은 값으로 나오게 할 수 있다. 최상위 부모 노드를 출력할 수 있다.
             # 원하는 값 보다 작을 경우 다음항을 더해 줌
@@ -44,7 +44,7 @@ for i in range(len(numbers)) :
             #      28은 30보다 작기 때문에 +13을 더해준다.
         else :
             break
-print(answer)
+print(ans)
 
 
 

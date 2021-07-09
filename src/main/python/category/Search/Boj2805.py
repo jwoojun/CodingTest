@@ -5,7 +5,7 @@ lst = list(map(int, input().split(" ")))
 lst.sort()
 
 start, end = 0, len(lst)
-answer = 0
+ans = 0
 while(start<=end) :
 
     mid =(start+end)//2
@@ -16,9 +16,9 @@ while(start<=end) :
         if lst[mid] <= lst[i] :
             length += (lst[i] - lst[mid])
     if (length >= M) :
-        answer = mid
+        ans = mid
         start = mid +1
     elif length < M :
         end = mid-1
 
-print(answer)
+print(ans)

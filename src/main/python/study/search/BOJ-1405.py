@@ -7,7 +7,7 @@ N, e, w, s, n = map(int, input().split())
 
 def dfs(x, y, count, percent):
 
-    global answer
+    global ans
     if count == N:
         answer += percent
         return
@@ -34,8 +34,8 @@ dy = [1, -1, 0, 0]
 # 각 방향으로 움직일 확률(동, 서, 남, 북)
 direction_percentage = [e, w, s, n]
 
-answer = 0
+ans = 0
 dfs(N, N, 0, 1)
-print(answer)
+print(ans)
 
 

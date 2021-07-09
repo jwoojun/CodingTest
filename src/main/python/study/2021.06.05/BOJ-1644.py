@@ -5,7 +5,7 @@ input = sys.stdin.readline
 
 n = int(input())
 prime_numbers = [True] * (n + 1)
-answer = 0
+ans = 0
 # 에르난데스의 체
 for i in range(2, int(math.sqrt(n) + 1)):
     j = 2

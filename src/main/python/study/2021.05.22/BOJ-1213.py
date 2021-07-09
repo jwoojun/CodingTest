@@ -4,7 +4,7 @@ name = list(input().strip())
 alpha_count = [0 for _ in range(26)]
 
 temp = ""
-answer = ""
+ans = ""
 
 for i in range(len(name)):
     alpha_count[ord(name[i]) - 65] += 1
@@ -19,10 +19,10 @@ for i in range(26):
             print("I'm Sorry Hansoo")
             exit()
 
-    answer += chr(i+65) *(alpha_count[i//2])
+    ans += chr(i + 65) * (alpha_count[i // 2])
 
-answer = answer + temp + answer[::-1]
-print(answer)
+ans = ans + temp + ans[::-1]
+print(ans)
 
 # if odd > 1:
 #     print("I'm Sorry Hansoo")

@@ -1,13 +1,13 @@
 N = int(input())
 
-answer =[]
+ans =[]
 for i in range(N) :
     data = input().split()
-    answer.append((data[0], data[1]))
+    ans.append((data[0], data[1]))
 
-answer = sorted(answer, key=lambda x : x[1])
+ans = sorted(ans, key=lambda x : x[1])
 
-for j in answer :
+for j in ans :
     print(j[0], end = " ")
 
 

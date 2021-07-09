@@ -6,15 +6,15 @@ input = sys.stdin.readline
 
 N = int(input())
 numbers = list(map(int, input().split()))
-answer = []
+ans = []
 for i in numbers:
-    position = bisect_left(answer, i)
-    if len(answer) <= position:
-        answer.append(i)
+    position = bisect_left(ans, i)
+    if len(ans) <= position:
+        ans.append(i)
     else:
-        answer[position] = i
-        print(answer)
-print(len(answer))
+        ans[position] = i
+        print(ans)
+print(len(ans))
 
 
 

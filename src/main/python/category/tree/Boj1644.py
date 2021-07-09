@@ -15,7 +15,7 @@ numbers = []
 for i in range(2, n + 1):
     if prime_numbers[i]:
         numbers.append(i)
-answer = 0
+ans = 0
 # for i in range(len(numbers)) :
 #     interval_num = 0
 #     interval_num += numbers[i]
@@ -42,8 +42,8 @@ for start in range(len(numbers)):
         end += 1
 
     if interval_sum == n:
-        answer += 1
+        ans += 1
 
     interval_sum -= numbers[start]
 
-print(answer)
+print(ans)

@@ -50,11 +50,11 @@ for x in range(1, N + 1):
     # [0, 1, 1, 1]
 
 
-answer = set([find_parent(parent, i) for i in travel_plan])
+ans = set([find_parent(parent, i) for i in travel_plan])
     # 부모의 주소를 기준으로 travel_plan 검토
     # travel_plan이 모두 이어져 있을 경우 여행가능. 아니면 불가능.
 
-if len(answer) >1 :
+if len(ans) >1 :
     print("NO")
 else :
     print("YES")

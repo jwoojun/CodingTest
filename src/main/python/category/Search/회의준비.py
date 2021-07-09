@@ -70,9 +70,9 @@ new_parent = set(parent[1:])
 print(list(new_parent))
 
 for i in new_parent:
-    answer = 0
+    ans = 0
     for j in parent:
-        answer = max(answer, len(parent[j]))
+        ans = max(ans, len(parent[j]))
 
 
 

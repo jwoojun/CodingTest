@@ -29,11 +29,11 @@ def binary_search(x, lst):
     return "no"
 
 
-answer = []
+ans = []
 for i in check_lst:
-    answer.append(binary_search(i, product_lst))
+    ans.append(binary_search(i, product_lst))
 
-for i in answer:
+for i in ans:
     print(i)
 
 

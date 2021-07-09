@@ -7,8 +7,8 @@ def solution(n) :
 N = int(input())
 for i in range(N) :
     a = input()
-    answer = solution(a)
-    print(f'#{i+1} {answer}')
+    ans = solution(a)
+    print(f'#{i+1} {ans}')
 
 
 # 출처 : https://swexpertacademy.com/main/solvingProblem/solvingProblem.do

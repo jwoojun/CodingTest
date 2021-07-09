@@ -1,6 +1,8 @@
+src/main/python/study/etc/recursion
 .gradle
 .idea/*
 gradlew.bat
 settings.gradle
 build.gradle
 gradlewsort/
+gradlew

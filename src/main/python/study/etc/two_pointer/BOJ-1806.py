@@ -36,7 +36,7 @@ print(subSum(numbers, S, N))
 
 sub_sum=numbers[0]
 end = 0
-answer = 1e9
+ans = 1e9
 for start in range(N) :
     while sub_sum < S and end < N :
         end += 1
@@ -46,10 +46,10 @@ for start in range(N) :
         sub_sum += numbers[end]
 
     if sub_sum >= S :
-        answer = min(answer, end-start+1)
+        ans = min(ans, end - start + 1)
     sub_sum -= numbers[start]
 
-if answer == 1e9 :
+if ans == 1e9 :
     print(0)
     exit()
-print(answer)
+print(ans)

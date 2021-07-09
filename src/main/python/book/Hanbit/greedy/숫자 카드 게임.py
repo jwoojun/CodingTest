@@ -5,15 +5,15 @@ input = sys.stdin.readline
 N, M = map(int, input().split())
 lst = []
 
-answer = []
+ans = []
 for i in range(N) :
     lst.append(list(map(int, input().split())))
 
 
 for i in range(len(lst)) :
-    answer.append(min(lst[i]))
+    ans.append(min(lst[i]))
 
-print(max(answer))
+print(max(ans))
 
 # 테스트 케이스(1)
 # 3 3

@@ -29,10 +29,10 @@ def dfs(x, y, answer):
     return answer
 max_ = -1
 for i in range(N):
-    answer = 0
+    ans = 0
     for j in range(M):
         if graph[i][j] == 1:
-            max_ = max(max_, dfs(i, j, answer))
+            max_ = max(max_, dfs(i, j, ans))
 print(max_)
 
 # def bfs(x, y, answer) :

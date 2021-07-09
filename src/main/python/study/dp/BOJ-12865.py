@@ -5,17 +5,43 @@ N, K = map(int, input().split())
 
 
 # 잘못된 풀이(1)
+dp_table = [[0] * (K + 1) for _ in range(N + 1)]
+bag = [[0, 0]]
+for i in range(N) :
+    bag.append(list(map(int, input().split())))
+dp =[0]*(N+1)
+for i in range(1, N+1) :
+    dp[i] = 0
+
+for i in range(1, N+1) :
+    weight, value = bag[i][0], bag[i][1]
+    for j in range(1, K+1) :
+        if j >= weight :
+            dp_table[i][j] = max(dp_table[i - 1][j - weight] + value, dp_table[i - 1][j])
+print(dp_table[N][K])
+
+
+
+# 올바른 풀이
+
+
+#
+# dp_table = [[0]*(K+1) for _ in range(N+1)]
+# bag = [(0,0)]
+
+
+
 # dp_table = [[0] * (K + 1) for _ in range(N + 1)]
 # bag = [[0, 0]]
-# for i in range(N) :
+# for i in range(1, N + 1):
 #     bag.append(list(map(int, input().split())))
 #
-# for i in range(1, N+1) :
+# for i in range(1, N + 1):
 #     weight, value = bag[i][0], bag[i][1]
-#     for j in range(1, K+1) :
-#         print(weight, value)
-#         if j < weight :
-#             # 질문 -> continue나 pass를 했을 경우 틀렸다고 판정이 되는데 왜 틀렸는지?
+#     print(weight, value)
+#     for j in range(1, K + 1):
+#         if j < weight:
+#             dp_table[i][j] = dp_table[i - 1][j]
 #             print("j, weight= ", j, weight)
 #             continue
 #
@@ -25,30 +51,6 @@ N, K = map(int, input().split())
 #         print(p)
 #     print('----------------------------')
 # print(dp_table[N][K])
-
-
-
-# 올바른 풀이
-dp_table = [[0] * (K + 1) for _ in range(N + 1)]
-bag = [[0, 0]]
-for i in range(1, N + 1):
-    bag.append(list(map(int, input().split())))
-
-for i in range(1, N + 1):
-    weight, value = bag[i][0], bag[i][1]
-    print(weight, value)
-    for j in range(1, K + 1):
-        if j < weight:
-            dp_table[i][j] = dp_table[i - 1][j]
-            print("j, weight= ", j, weight)
-            continue
-
-        dp_table[i][j] = max(dp_table[i - 1][j - weight] + value, dp_table[i - 1][j])
-    print('----------------------------')
-    for p in dp_table:
-        print(p)
-    print('----------------------------')
-print(dp_table[N][K])
 
 
 

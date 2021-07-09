@@ -52,7 +52,7 @@ def dfs(x, y):
 
 for i in range(T):
     M, N, K = map(int, input().split())
-    answer = 0
+    ans = 0
     graph = [[0] * (M) for j in range(N)]
     for k in range(K):
         x, y = map(int, input().split())
@@ -61,5 +61,5 @@ for i in range(T):
         for j in range(M) :
             if graph[i][j] == 1 :
                 dfs(i,j)
-                answer += 1
-    print(answer)
+                ans += 1
+    print(ans)

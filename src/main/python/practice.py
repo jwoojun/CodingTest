@@ -1,29 +1,32 @@
 import sys
-from collections import deque
 
 input = sys.stdin.readline
 
-N = int(input())
-numbers = list(map(int, input().split()))
-
-visited = [True] + [False] * N
-
-
-def bfs(start, result):
-    q = deque()
-    q.append((start, result))
-    while q:
-        index, count = q.popleft()
-        if index + 1 == N:
-            return count
-
-        for i in range(numbers[index] + 1):
-            next_index = index+i
-            if next_index < N and not visited[next_index]:
-                visited[next_index] = True
-                q.append((next_index, count + 1))
-
-    return -1
+N, M, L = map(int, input().split())
+stations = list(map(int, input().split()))
+stations.append(0)
+stations.append(L - 1)
+stations.sort()
+start = 0
+end = stations[-2]
+answer = -1e9
+while start <= end:
+    mid = (start + end) // 2
+    count = 0
+    for i in range(1, len(stations)):
+        if stations[i] - stations[i - 1] > mid:
+            count += (stations[i] - stations[i - 1] - 1) // mid
 
 
-print(bfs(0, 0))
+
+    if count > M:
+        start = mid + 1
+    
+    else:
+        answer = mid
+        end = mid - 1
+    print(start, end, count,answer)
+print(answer)
+
+
+

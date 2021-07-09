@@ -11,7 +11,7 @@ for i in range(1, N + 1):
 
 for i in range(1, N + 1):
     position.append([0] + list(map(int, input().split())))
-answer = 0
+ans = 0
 asw = []
 # for i in range(1, len(position)+1) :
 #     position[i][]

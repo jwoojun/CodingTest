@@ -6,12 +6,12 @@ def solution(phone_number):
     return True
 
 
-answer = []
+ans = []
 for i in range(int(input().rstrip())):
     lst = [input() for _ in range(int(input()))]
     if (solution(lst)):
-        answer.append("YES")
+        ans.append("YES")
     else:
-        answer.append("NO")
-for i in answer:
+        ans.append("NO")
+for i in ans:
     print(i)

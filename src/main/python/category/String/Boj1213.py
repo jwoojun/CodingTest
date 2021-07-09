@@ -37,8 +37,8 @@ if len(dic[i]) % 2 == 0:
         for j in range(len(dic[i]) // 2):
             start.append(dic[i].pop(0))
 
-    answer = "".join(start) + "".join(sorted(start, reverse=True))
-    print(answer)
+    ans = "".join(start) + "".join(sorted(start, reverse=True))
+    print(ans)
     exit()
 
 
@@ -51,7 +51,7 @@ else:
         if len(dic[i]) != 0:
             for j in range(len(dic[i]) // 2):
                 start.append(dic[i].pop(0))
-    answer = "".join(start) + "".join(mid) + "".join(sorted(start, reverse=True))
-    print(answer)
+    ans = "".join(start) + "".join(mid) + "".join(sorted(start, reverse=True))
+    print(ans)
     exit()
 print(impossible)

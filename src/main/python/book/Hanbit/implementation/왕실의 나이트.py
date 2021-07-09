@@ -8,12 +8,12 @@ x = ord(x) - ord(x) + 1
 # 이동 방향
 move_types = [(-2, 1), (-2, -1), (-1, 2), (-1, -2), (2, -1), (2, 1), (1, 2), (1, -2)]
 
-answer = 0
+ans = 0
 
 for i in range(len(move_types)):
     nx = x + move_types[i][0]
     ny = y + move_types[i][1]
     if 1 <= nx <= 8 and 1 <= ny <= 8:
-        answer += 1
+        ans += 1
 
-print(answer)
+print(ans)

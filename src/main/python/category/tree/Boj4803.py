@@ -34,13 +34,13 @@ a = set()
 for i in range(1, len(parent)):
     a.add(parent[i])
 
-answer = len(list(a))
+ans = len(list(a))
 
 
 
-if (len(answer)) == 1 :
+if (len(ans)) == 1 :
     print("No trees.")
-elif len(answer) == 2 :
+elif len(ans) == 2 :
     print("There is one tree.")
 else :
     print("A forest of 3 trees.")

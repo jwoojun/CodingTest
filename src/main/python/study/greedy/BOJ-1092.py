@@ -4,14 +4,14 @@ M = int(input())
 boxes = list(map(int, input().split()))
 boxes.sort(reverse=True)
 cranes.sort(reverse=True)
-answer = 0
+ans = 0
 
 if boxes[0] > cranes[0]:
     print(-1)
     exit()
 else:
     while len(boxes) != 0:
-        answer += 1
+        ans += 1
 
         for i in cranes:
             count = 0
@@ -19,7 +19,7 @@ else:
                 if i >= boxes[j]:
                     del boxes[j]
                     break
-print(answer)
+print(ans)
 
 # TestCase 1
 # 3

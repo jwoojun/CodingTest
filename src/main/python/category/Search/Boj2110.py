@@ -13,7 +13,7 @@ def router_install(distance) :
             current_house = houses[i]
     return count
 
-answer = 0
+ans = 0
 
 
 start, end = 1, houses[-1] - houses[0]
@@ -21,8 +21,8 @@ start, end = 1, houses[-1] - houses[0]
 while (start<=end) :
     mid = (start+end)//2
     if(router_install(mid) >= C) :
-        answer = mid
+        ans = mid
         start = mid+1
     else :
         end = mid -1
-print(answer)
+print(ans)

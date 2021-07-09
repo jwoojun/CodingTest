@@ -40,7 +40,7 @@ dic={}
 clothes = [["yellow_hat", "headgear"], ["blue_sunglasses", "eyewear"], ["green_turban", "headgear"]]
 # clothes = [["crow_mask", "face"], ["blue_sunglasses", "face"], ["smoky_makeup", "face"]]
 category = {}
-answer = 1
+ans = 1
 for i in range(len(clothes)) :
     if clothes[i][1] in dic :
         dic[clothes[i][1]].append(clothes[i][0])
@@ -49,6 +49,6 @@ for i in range(len(clothes)) :
         dic[clothes[i][1]] = [clothes[i][0]]
 for i in dic :
     print(dic[i])
-    answer *= (len(dic[i])+1)
+    ans *= (len(dic[i]) + 1)
 
-print(answer-1)
+print(ans - 1)

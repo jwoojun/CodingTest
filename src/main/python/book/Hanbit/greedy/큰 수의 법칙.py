@@ -33,7 +33,7 @@ numbers.sort()
 max_number_count = int(M/(K+1)) * K
 max_number_count += M%(K+1)
 
-answer = 0
-answer += max_number_count * numbers[-1]
-answer += (M-max_number_count)*numbers[-2]
-print(answer)
+ans = 0
+ans += max_number_count * numbers[-1]
+ans += (M - max_number_count) * numbers[-2]
+print(ans)

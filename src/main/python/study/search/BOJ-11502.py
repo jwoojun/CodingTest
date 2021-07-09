@@ -3,11 +3,11 @@ import sys
 
 input = sys.stdin.readline
 n = int(input())
-answer = []
+ans = []
 for i in range(n):
-    answer.append(int(input()))
+    ans.append(int(input()))
 
-max_number = max(answer)
+max_number = max(ans)
 prime_numbers = [[True] for _ in range(max_number + 1)]
 for i in range(2, int(math.sqrt(max_number)) + 1):
     j = 2
@@ -39,7 +39,7 @@ def find(number):
                     return lst
 
 
-for i in answer:
+for i in ans:
     if find(i):
         a, b, c = find(i)
         print(a, b, c)
