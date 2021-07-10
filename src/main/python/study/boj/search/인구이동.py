@@ -28,7 +28,6 @@ def bfs(index, x, y):
             ny = y + dy[i]
             if 0 <= nx < N and 0 <= ny < N and visited[nx][ny] == -1:
                 if L <= abs(data[nx][ny] - data[x][y]) <= R:
-                    flag = True
                     q.append((nx, ny))
                     visited[nx][ny] = index
                     sum_ += data[nx][ny]
@@ -44,17 +43,18 @@ total_count = 0
 
 while True:
     index = 0
-    flag =False
+    flag = False
 
     visited = [[-1] * N for _ in range(N)]
     for i in range(N):
         for j in range(N):
             if visited[i][j] == -1:
                 bfs(index, i, j)
-                index +=1
+                index += 1
                 print(index)
-    print(flag)
-    if not flag  :
+
+    # 모든 국가를 탐색했을 때
+    if index == N * N:
         break
     total_count += 1
 print(total_count)

@@ -18,4 +18,3 @@ else :
     print(len(letter))
 
 
-# 첫 번째 시작점도 분기점으로 친다.

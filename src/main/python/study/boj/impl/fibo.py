@@ -21,3 +21,6 @@ memoi2[1], memoi2[2] = 1, 1
 def fibo2(x):
     for i in range(3, x + 1):
         memoi2[i] = memoi2[i - 1] + memoi2[i - 2]
+
+
+
