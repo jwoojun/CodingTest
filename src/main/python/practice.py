@@ -1,32 +1,49 @@
 import sys
-
 input = sys.stdin.readline
 
-N, M, L = map(int, input().split())
-stations = list(map(int, input().split()))
-stations.append(0)
-stations.append(L - 1)
-stations.sort()
-start = 0
-end = stations[-2]
-answer = -1e9
-while start <= end:
-    mid = (start + end) // 2
-    count = 0
-    for i in range(1, len(stations)):
-        if stations[i] - stations[i - 1] > mid:
-            count += (stations[i] - stations[i - 1] - 1) // mid
+
+N = int(input())
+max_result = -1e9
+min_result = 1e9
+numbers= list(map(int,input().split()))
+plus, minus, multi, div = map(int,input().split())
+op_count = plus+minus+ multi+div
+result = 0
+def dfs(result, count, plus, minus, multi, div) :
+    global max_result, min_result
+    if count-1 == op_count :
+        max_result = max(result, max_result)
+        min_result = min(result, min_result)
+        return
+    if plus > 0 :
+        dfs(result+numbers[count], count+1, plus-1, minus, multi, div)
+    if minus > 0 :
+        dfs(result-numbers[count], count+1, plus, minus-1, multi, div)
+    if multi > 0 :
+        dfs(result*numbers[count], count+1, plus, minus, multi-1, div)
+    if div > 0 :
+        dfs(int(result/numbers[count]), count+1, plus, minus, multi, div-1)
+
+dfs(numbers[0], 1, plus, minus, multi, div)
+print(max_result)
+print(min_result)
 
 
 
-    if count > M:
-        start = mid + 1
-    
-    else:
-        answer = mid
-        end = mid - 1
-    print(start, end, count,answer)
-print(answer)
+
+# N =  int(input())
+# numbers = list(map(int,input().split()))
+# operation_count = list(map(int,input().split()))
 
 
-
+# a = -3
+# b = 2
+#
+# print(a//b)
+# print('------')
+#
+# a = -3
+# b = 2
+# print(-abs(a)//2)
+#
+#

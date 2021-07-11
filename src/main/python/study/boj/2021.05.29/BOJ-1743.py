@@ -1,65 +1,43 @@
 import sys
-
-sys.setrecursionlimit(100000)
+from collections import deque
 
 input = sys.stdin.readline
 N, M, K = map(int, input().split())
 graph = [[0] * M for j in range(N)]
-check = [[False] * M for j in range(N)]
+
 for i in range(K):
     x, y = map(int, input().split())
     graph[x - 1][y - 1] = 1
 
+dx = [0, 0, 1, -1]
+dy = [1, -1, 0, 0]
 
-def dfs(x, y, answer):
-    dx = [0, 0, 1, -1]
-    dy = [1, -1, 0, 0]
-    graph[x][y] = 0
+
+def bfs(x, y, answer):
+    q = deque()
+    q.append((x, y))
     answer += 1
-    for i in range(4):
-        nx = x + dx[i]
-        ny = y + dy[i]
-        if 0 <= nx < N and 0 <= ny < M:
-            if graph[nx][ny] == 1:
-                x, y = nx, ny
-                answer = dfs(x, y, answer)
-        for i in graph :
-            print(i)
-        print('--------')
+    graph[x][y] = 0
+
+    while q:
+        x_, y_ = q.popleft()
+        for i in range(4):
+            next_x = x_ + dx[i]
+            next_y = y_ + dy[i]
+            if 0 <= next_x < N and 0 <= next_y < M:
+                if graph[next_x][next_y] == 1:
+                    graph[next_x][next_y] = 0
+                    answer += 1
+                    q.append((next_x, next_y))
+
     return answer
-max_ = -1
+
+
+max_ = -1e9
 for i in range(N):
-    ans = 0
+    answer = 0
     for j in range(M):
         if graph[i][j] == 1:
-            max_ = max(max_, dfs(i, j, ans))
-print(max_)
-
-# def bfs(x, y, answer) :
-#     dx = [0, 0, 1, -1]
-#     dy = [1, -1, 0, 0]
-#     q = deque([[x,y]])
-#     graph[x][y] = 0
-#     answer += 1
-#     while q :
-#         a, b = q.popleft()
-#         for i in range(4):
-#             nx = a + dx[i]
-#             ny = b + dy[i]
-#             if 0 <= nx < N and 0 <= ny < M:
-#                 if graph[nx][ny] == 1:
-#                     answer += 1
-#                     graph[nx][ny] = 0
-#                     q.append([nx, ny])
-#
-#     return answer
-# max_ = -1
-# for i in range(N):
-#     answer = 0
-#     for j in range(M):
-#         if graph[i][j] == 1:
-#             max_ = max(max_, bfs(i,j,answer))
+            max_ = max(bfs(i, j, answer), max_)
 
 print(max_)
-
-# https://li-fo.tistory.com/66
