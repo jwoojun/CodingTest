@@ -13,27 +13,5 @@ for i in numbers:
         ans.append(i)
     else:
         ans[position] = i
-        print(ans)
 print(len(ans))
-
-
-
-
-
-# 초기 실패했던 풀이
-# import sys
-#
-# input = sys.stdin.readline
-#
-# N = int(input())
-#
-# numbers = [0] + list(map(int, input().split()))
-#
-# dp = [0] + [1] * (N)
-#
-# for i in range(1, N + 1):
-#     for j in range(1, i):
-#         if numbers[j] < numbers[i]:
-#             dp[i] = max(dp[i], dp[j] + 1)
-#
-# print(max(dp))
+# https://namu.wiki/w/%EC%B5%9C%EC%9E%A5%20%EC%A6%9D%EA%B0%80%20%EB%B6%80%EB%B6%84%20%EC%88%98%EC%97%B4#s-3.2

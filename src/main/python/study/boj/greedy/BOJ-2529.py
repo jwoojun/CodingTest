@@ -1,3 +1,10 @@
+
+
+visited = [False]*N
+def dfs(result, count) :
+
+
+
 N = int(input())
 K = input().split()
 check = [False] * 10
