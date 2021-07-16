@@ -1,44 +1,83 @@
-import sys
-import sys
 
-N = int(input())
-under_zero = []
-over_zero = []
-mid = []
-for i in range(N):
-    number = int(input())
-    if number <= 0:
-        under_zero.append(number)
-    elif number ==1 :
-        mid.append(1)
-    else:
-        over_zero.append(number)
-
-under_zero.sort()
-over_zero.sort(reverse=True)
-one = []
-answer = 0
-if len(under_zero)%2 == 0 :
-    for i in range(0, len(under_zero)-1, 2) :
-        answer += under_zero[i] * under_zero[i+1]
-
-else :
-    for i in range(0, len(under_zero)-1, 2) :
-        answer += under_zero[i] * under_zero[i+1]
-    answer += under_zero[-1]
-
-if len(over_zero)%2 == 0 :
-    for i in range(0, len(over_zero)-1, 2) :
-        answer += over_zero[i] * over_zero[i+1]
-
-else :
-    for i in range(0, len(over_zero)-1, 2) :
-        answer += over_zero[i] * over_zero[i+1]
-    answer += over_zero[-1]
-
-
-answer += sum(mid)
-print(answer)
+# t=2
+# dp =[[[-1 for _ in range(t) ]for _ in range(t)] for _ in range(t)]
+# for i in dp :
+#     print(i)
+#
+# print(dp[0][0][1])
+# input = sys.stdin.readline
+#
+# N = int(input())
+# station = []
+#
+# for i in range(N):
+#     a, b = map(int, input().split())
+#     count = 0
+#     station.append((a, b, count))
+#
+# min_value = 1e9
+# L, P = map(int, input().split())
+#
+# q = deque()
+# q.append((0, P, 0))
+# print(q)
+# start_distance = 0
+# start_fuel = P
+# number = 0
+# while q:
+#     distance, fuel, cnt = q.popleft()
+#     print(q)
+#     if cnt == N :
+#         break
+#     if fuel <= 0:
+#         continue
+#
+#     if distance >= L or cnt == N:
+#         min_value = min(cnt, min_value)
+#         print(min_value)
+#
+#     q.append((distance + station[number][0], fuel - station[number][0] + station[number][1], cnt + 1))
+#     q.append((distance + station[number][0], fuel - station[number][0], cnt + 1))
+#
+# print(min_value)
+# N = int(input())
+# under_zero = []
+# over_zero = []
+# mid = []
+# for i in range(N):
+#     number = int(input())
+#     if number <= 0:
+#         under_zero.append(number)
+#     elif number ==1 :
+#         mid.append(1)
+#     else:
+#         over_zero.append(number)
+#
+# under_zero.sort()
+# over_zero.sort(reverse=True)
+# one = []
+# answer = 0
+# if len(under_zero)%2 == 0 :
+#     for i in range(0, len(under_zero)-1, 2) :
+#         answer += under_zero[i] * under_zero[i+1]
+#
+# else :
+#     for i in range(0, len(under_zero)-1, 2) :
+#         answer += under_zero[i] * under_zero[i+1]
+#     answer += under_zero[-1]
+#
+# if len(over_zero)%2 == 0 :
+#     for i in range(0, len(over_zero)-1, 2) :
+#         answer += over_zero[i] * over_zero[i+1]
+#
+# else :
+#     for i in range(0, len(over_zero)-1, 2) :
+#         answer += over_zero[i] * over_zero[i+1]
+#     answer += over_zero[-1]
+#
+#
+# answer += sum(mid)
+# print(answer)
 
 
 # N = int(input())

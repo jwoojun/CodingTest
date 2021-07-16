@@ -1,3 +1,5 @@
+from collections import deque
+
 N = int(input())
 cranes = list(map(int, input().split()))
 M = int(input())
@@ -9,16 +11,16 @@ ans = 0
 if boxes[0] > cranes[0]:
     print(-1)
     exit()
-else:
-    while len(boxes) != 0:
-        ans += 1
 
-        for i in cranes:
-            count = 0
-            for j in range(len(boxes)):
-                if i >= boxes[j]:
-                    del boxes[j]
-                    break
+while boxes:
+
+    c_count = 0
+    while c_count < len(cranes) :
+        if cranes[c_count] >= boxes[c_count] :
+            boxes.remove(boxes[c_count])
+        c_count += 1
+    ans += 1
+    print(boxes)
 print(ans)
 
 # TestCase 1
