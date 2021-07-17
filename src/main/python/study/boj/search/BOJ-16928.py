@@ -7,9 +7,13 @@ N, M = map(int, input().split())
 ladder = []
 snake = []
 visited = [True] + [False] * (100)
+
+# 사다리 좌표(출발점, 도착점)
 for i in range(N):
     ladder.append(list(map(int, input().split())))
 
+
+# 뱀 좌표(출발점, 도착점)
 for i in range(M):
     snake.append(list(map(int, input().split())))
 
@@ -17,6 +21,7 @@ ladder.sort()
 snake.sort()
 
 
+# 뱀/사다리일 경우 이동
 def ladder_or_snake(position):
     # 사다리 좌표 찾기
     for j in range(len(ladder)):
@@ -47,6 +52,8 @@ def bfs(position, count):
 
         for i in range(1, 7):
             next_position = position + i
+
+            # 임시변수 지정
             temp = next_position
             if next_position < 101 and not visited[next_position]:
                 new_position = ladder_or_snake(next_position)
