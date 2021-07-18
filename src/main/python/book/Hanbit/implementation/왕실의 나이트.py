@@ -1,19 +1,15 @@
 # 왕실의 나이트
-word = input()
+word = input().rstrip()
 
-# 문자 입력 및 변환
-x, y = word[0], int(word[1])
-x = ord(x) - ord(x) + 1
+move = [(-2, 1), (-2, -1), (2, 1), (2, -1), (1, 2), (1, -2), (-1, 2), (-1, -2)]
 
-# 이동 방향
-move_types = [(-2, 1), (-2, -1), (-1, 2), (-1, -2), (2, -1), (2, 1), (1, 2), (1, -2)]
+x_position = int(word[1])
+y_position = int(ord(word[0]) - ord('a') + 1)
 
-ans = 0
-
-for i in range(len(move_types)):
-    nx = x + move_types[i][0]
-    ny = y + move_types[i][1]
-    if 1 <= nx <= 8 and 1 <= ny <= 8:
-        ans += 1
-
-print(ans)
+count = 0
+for i in range(len(move)):
+    next_x = x_position + move[i][0]
+    next_y = y_position + move[i][1]
+    if 1 <= next_x <= 8 and 1 <= next_y <= 8:
+        count += 1
+print(count)

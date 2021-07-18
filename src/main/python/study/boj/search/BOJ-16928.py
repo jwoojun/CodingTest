@@ -12,7 +12,6 @@ visited = [True] + [False] * (100)
 for i in range(N):
     ladder.append(list(map(int, input().split())))
 
-
 # 뱀 좌표(출발점, 도착점)
 for i in range(M):
     snake.append(list(map(int, input().split())))
@@ -37,6 +36,10 @@ def ladder_or_snake(position):
     return position
 
 
+def visitable(position) :
+    return position <101 and not visited[position]
+
+
 def bfs(position, count):
     q = deque()
     q.append((position, count))
@@ -44,26 +47,18 @@ def bfs(position, count):
 
     while q:
         position, count = q.popleft()
-        if position > 100:
-            return
 
         if position == 100:
             return count
 
         for i in range(1, 7):
             next_position = position + i
-
-            # 임시변수 지정
-            temp = next_position
-            if next_position < 101 and not visited[next_position]:
+            if visitable(next_position) :
                 new_position = ladder_or_snake(next_position)
-                if (new_position != temp):
-                    visited[new_position] = True
-                    q.append((new_position, count + 1))
-
-                else:
-                    visited[temp] = True
-                    q.append((temp, count + 1))
-
+                visited[new_position] = True
+                q.append((new_position, count+1))
 
 print(bfs(1, 0))
+
+
+

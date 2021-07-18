@@ -1,3 +1,55 @@
+# 4 4
+# 1 1 0
+# 1 1 1 1
+# 1 0 0 1
+# 1 1 0 1
+# 1 1 1 1
+
+# N, K = map(int, input().split())
+# alpha_lst = []
+# learn = [False] * 26
+#
+# if K < 5 or K == 26 :
+#     print(0 if K<5 else N)
+#     exit()
+
+
+# 1
+# N, M, K= map(int,input().split())
+# numbers = list(map(int,input().split()))
+# numbers.sort()
+# biggest = numbers[-1]
+# second_biggest = numbers[-2]
+# one_set = M//(K+1)
+# namuzi = M%(K+1)
+
+
+# a= biggest*(K)+second_biggest
+# print(a*one_set+namuzi*biggest)
+
+
+# from math import factorial
+# N=int(input())
+#
+# dp_table = [0]*101
+# dp_table[2] = 1
+#
+#
+# for i in range(N) :
+#     number = int(input())
+#     if number % 2 != 0 :
+#         print(0)
+#     else :
+#         if number == 2 :
+#             print(1)
+#         else :
+#             k = number // 2
+#             dp_table[2*k] = dp_table[k] +3
+#
+# print(dp_table)
+
+
+#
 
 # t=2
 # dp =[[[-1 for _ in range(t) ]for _ in range(t)] for _ in range(t)]
