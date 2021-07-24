@@ -12,6 +12,7 @@ for i in range(N):
     P.append(p)
 
 max_value = -1
+
 # dp_table -> i 번째까지 시행했을 때 얻을 수 있는 금액의 최대 크기
 for i in range(N - 1, -1, -1):
     time = T[i] + i
@@ -20,7 +21,6 @@ for i in range(N - 1, -1, -1):
         max_value = dp_table[i]
     else:
         dp_table[i] = max_value
-
 print(max_value)
 
 
