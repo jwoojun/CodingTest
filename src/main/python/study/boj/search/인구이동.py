@@ -33,7 +33,10 @@ def bfs(index, x, y):
                     sum_ += data[nx][ny]
                     count += 1
                     united.append((nx, ny))
-
+    print('------------------------')
+    for i in visited :
+        print(i)
+    print('------------------------')
     for i, j in united:
         data[i][j] = sum_ // count
     return count

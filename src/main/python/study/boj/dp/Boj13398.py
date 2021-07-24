@@ -4,29 +4,12 @@ input = sys.stdin.readline
 
 N = int(input())
 numbers = list(map(int, input().split()))
-dp = [[0, 0] for i in range(N)]
-dp[0][0] = numbers[0]
-
-
+dp_table = [[0, 0] for _ in range(N)]
+dp_table[0][0] = numbers[0]
 max_value = -1e9
-
-if N > 1 :
-    for i in range(1, N) :
-        dp[i][0] = max(dp[i-1][1]+numbers[i], numbers[i] )
-
-
-
-
-m = -999999999
-if N > 1 :
-    for i in range(1, N):
-        # 제거 안 하는 경우
-        dp[i][0] = max(dp[i - 1][0] + numbers[i], numbers[i])
-
-        # 제거 하는 경우
-        dp[i][1] = max(dp[i - 1][0], dp[i - 1][1] + numbers[i])
-        m = max(m, dp[i][0], dp[i][1])
-    print(m)
-
-else :
-    print(dp[0][0])
+for i in range(1, N):
+    dp_table[i][0] = max(numbers[i], dp_table[i - 1][0] + numbers[i])
+    dp_table[i][1] = max(dp_table[i - 1][1] + numbers[i], dp_table[i - 1][0])
+    print("dp_table[i][0]= ",dp_table[i][0], "dp_table[i][1]= ",dp_table[i][1], "max_value= ",max_value)
+    max_value = max(dp_table[i][0], dp_table[i][1], max_value)
+print(max_value)

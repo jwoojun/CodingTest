@@ -2,34 +2,63 @@ import sys
 from collections import deque
 
 input = sys.stdin.readline
-N, K = map(int, input().split())
-board = []
-data = []
+
+N = int(input())
+dp_table = [0] * (N + 1)
+T, P = [], []
 for i in range(N):
-    board.append(list(map(int, input().split())))
-    for j in range(N):
-        if board[i][j] != 0:
-            data.append((board[i][j], 0, i, j))
+    t, p = map(int, input().split())
+    T.append(t)
+    P.append(p)
 
-S, X, Y = map(int, input().split())
-data.sort()
-q = deque(data)
+max_value = -1
+# dp_table -> i 번째까지 시행했을 때 얻을 수 있는 금액의 최대 크기
+for i in range(N - 1, -1, -1):
+    time = T[i] + i
+    if time <= N:
+        dp_table[i] = max(max_value, P[i] + dp_table[time])
+        max_value = dp_table[i]
+    else:
+        dp_table[i] = max_value
 
-dx = [0, 0, 1, -1]
-dy = [1, -1, 0, 0]
-while q:
-    virus, time, x, y = q.popleft()
-    if time == S:
-        break
-    for i in range(4):
-        next_x = x + dx[i]
-        nexy_y = y + dy[i]
-        if 0<= next_x < N and 0<= nexy_y < N :
-            if board[next_x][nexy_y] == 0 :
-                board[next_x][nexy_y] = virus
-                q.append((virus,time+1, next_x, nexy_y))
+print(max_value)
 
-print(board[X-1][Y-1])
+
+# N, M = map(int, input().split())
+# board = []
+# for i in range(N):
+#     board.append(list(map(int, input().split())))
+#
+# cost = copy.deepcopy(board)
+# dx= [0,0,1,-1]
+# dy=[1,-1,0,0]
+#
+# def bfs(i,j ) :
+#     board[i][j] = 1
+#     q = deque()
+#     q.append((i,j))
+#
+#     while q :
+#         x, y = q.popleft()
+#         for i in range(4) :
+#             next_x = x + dx[i]
+#             next_y = y + dy[i]
+#             if 0<= next_x<N and 0<= next_y <M :
+#                 if cost[next_x][next_y] == 1 :
+#                     cost[next_x][next_y] = cost[x][y] +1
+#                     q.append((next_x,next_y))
+#
+#     return cost[N-1][M-1]
+#
+# print(bfs(0,0))
+# 5 6
+# 1 0 1 0 1 0
+# 1 1 1 1 1 1
+# 0 0 0 0 0 1
+# 1 1 1 1 1 1
+# 1 1 1 1 1 1
+
+
 # 4 4
 # 1 1 0
 # 1 1 1 1
