@@ -20,7 +20,7 @@ def dfs(x, y, current_X, current_Y, count, color):
         return
     visited[current_X][current_Y] = True
     if x == current_X and y == current_Y and count >= 4:
-        cycle = True
+        cycle = Truez
         return
 
     for i in range(4):
