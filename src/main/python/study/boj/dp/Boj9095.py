@@ -2,6 +2,8 @@ import sys
 input = sys.stdin.readline
 
 
+
+
 T = int(input())
 lst = [int(input()) for _ in range(T)]
 memoi = [0]*1001

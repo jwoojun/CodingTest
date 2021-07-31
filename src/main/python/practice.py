@@ -11,7 +11,7 @@ for i in range(N):
     T.append(t)
     P.append(p)
 
-max_value = -1
+max_value = 0
 
 # dp_table -> i 번째까지 시행했을 때 얻을 수 있는 금액의 최대 크기
 for i in range(N - 1, -1, -1):
@@ -22,6 +22,15 @@ for i in range(N - 1, -1, -1):
     else:
         dp_table[i] = max_value
 print(max_value)
+
+
+
+# p = []
+# for itm in result:
+#     if itm[0] <= 1:
+#         p.append(itm[1])
+#
+# print(max(p))
 
 
 # N, M = map(int, input().split())
