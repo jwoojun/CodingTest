@@ -14,6 +14,8 @@ dy = [1,-1,0,0]
 
 
 temp = [[0]*C for _ in range(R)]
+
+# 청소기 -> 범위가 가능한 것만 따로 빼기
 def spread_all_direction(k, z) :
     lst = []
     if 0 <= k + 1 < R and 0 <= z < C:
@@ -42,7 +44,7 @@ for i in range(R) :
     for j in range(C) :
         if board[i][j] == -1 :
             cleaner.append([i,j])
-        if board[i][j] != 0 and board[i][j] != -1 :
+        if board[i][j] >0 :
             spread_dust(i, j)
 
 for i in range(len(cleaner)) :
@@ -66,3 +68,8 @@ def find_cleaner_position(x,y) :
             lst.append((x,y, temp[x][y]))
 
 
+# 배열 돌리기
+
+# 한 번에 처리
+
+# 최대한 심플하게
