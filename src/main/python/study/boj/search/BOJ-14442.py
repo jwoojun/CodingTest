@@ -1,17 +1,17 @@
 import sys
 from collections import deque
-
 input = sys.stdin.readline
 
 N, M, K = map(int, input().split())
 
 dx = [0, 0, 1, -1]
 dy = [1, -1, 0, 0]
+
 board = []
+
 for i in range(N) :
     board.append(list(map(int, input().rstrip())))
 visited = [[[0]*(K+1) for _ in range(M)] for _ in range(N)]
-
 
 def visitable(x, y, wall) :
     return 0<= x < N and 0<= y < M and not visited[x][y][wall]
@@ -35,10 +35,5 @@ def bfs() :
                 elif board[next_x][next_y] == 1 and wall+1 <= K :
                     visited[next_x][next_y][wall+1] = visited[x][y][wall]+1
                     q.append((next_x, next_y, wall+1))
-    return  -1
-
+    return -1
 print(bfs())
-
-
-
-
