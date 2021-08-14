@@ -47,3 +47,4 @@ if answer[0] == 1 :
     print(1) if not flag else print(0)
     exit()
 print(0)
+print(0)
