@@ -21,6 +21,7 @@ def bfs(i, j):
     visited[i][j] = 1
     while q:
         x, y, distance = q.popleft()
+        # 가까운 곳 만나면 탐색 종료
         if board[x][y] == 1 :
             return distance
 
@@ -36,10 +37,10 @@ result = 0
 for row in range(N) :
     for column in range(M) :
         if board[row][column] != 1 :
+            # 매번 새로운 방문 배열 생성
             visited = [[0]*M for _ in range(N)]
             count = bfs(row, column)
-            if count > result :
-                result = count
+            result = max(count, result)
 
 
 print(result)

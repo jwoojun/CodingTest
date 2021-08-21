@@ -35,6 +35,7 @@ def check_small_square(x, y, value):
                 return False
     return True
 
+
 def dfs(index) :
     if index == len(blank) :
         for row in board :
