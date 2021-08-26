@@ -13,6 +13,7 @@ def check_horizontal (x, value) :
             return False
     return True
 
+# 저거를 한 번에 묶어서 풀어버린다.
 
 def check_vertical(y, value) :
     for number in range(9) :

@@ -14,7 +14,7 @@ move = [(0, 1), (1, 0), (-1, 0), (0, -1), (1, 1), (1, -1), (-1, 1), (-1, -1)]
 def visitable(x, y):
     return 0 <= x < N and 0 <= y < M
 
-
+# 반대로 있는 곳부터 접근하는 것 -> 먼저 들어간 것이 최솟값(벽을 부수거나) : 같은 레벨로 움직이니까
 def bfs(i, j):
     q = deque()
     q.append((i, j, 0))
@@ -33,6 +33,7 @@ def bfs(i, j):
                 visited[next_x][next_y] = 1
     return 0
 
+
 result = 0
 for row in range(N) :
     for column in range(M) :
@@ -42,5 +43,6 @@ for row in range(N) :
             count = bfs(row, column)
             result = max(count, result)
 
-
 print(result)
+
+
