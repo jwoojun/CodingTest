@@ -1,27 +1,71 @@
 import sys
 from collections import deque
-
 input = sys.stdin.readline
+import heapq
 
-N = int(input())
-dp_table = [0] * (N + 1)
-T, P = [], []
-for i in range(N):
-    t, p = map(int, input().split())
-    T.append(t)
-    P.append(p)
 
-max_value = 0
 
-# dp_table -> i 번째까지 시행했을 때 얻을 수 있는 금액의 최대 크기
-for i in range(N - 1, -1, -1):
-    time = T[i] + i
-    if time <= N:
-        dp_table[i] = max(max_value, P[i] + dp_table[time])
-        max_value = dp_table[i]
-    else:
-        dp_table[i] = max_value
-print(max_value)
+
+subway = ["1 2 3 4 5 6 7 8", "2 11","0 11 10", "3 17 19 12 13 9 14 15 10", "20 2 21"]
+
+station = []
+for i in range(len(subway)) :
+    station.append(subway[i].split(" "))
+for k in station :
+    for i in range(len(k)) :
+        k[i] = int(k[i])
+
+for p in station :
+    print(p)
+
+
+
+def dijkstra(station, start):
+    distances = [1e9] * (len(station) + 1)
+    distances[start] = 0
+    queue = []
+    heapq.heappush(queue, [distances[start], start])
+
+    while queue :
+        current_distance, current_destination = heapq.heappop(queue)
+
+        if distances[current_destination] < current_distance:
+            continue
+        for new_destination, new_distance in station[current_destination].items():
+            distance = current_distance + new_distance
+            if distance < distances[new_destination]:
+                distances[new_destination] = distance
+                heapq.heappush(queue, [distance, new_destination])
+    return distances
+dijkstra(station,1)
+
+
+
+
+# import sys
+# from collections import deque
+#
+# input = sys.stdin.readline
+#
+# N = int(input())
+# dp_table = [0] * (N + 1)
+# T, P = [], []
+# for i in range(N):
+#     t, p = map(int, input().split())
+#     T.append(t)
+#     P.append(p)
+#
+# max_value = 0
+#
+# # dp_table -> i 번째까지 시행했을 때 얻을 수 있는 금액의 최대 크기
+# for i in range(N - 1, -1, -1):
+#     time = T[i] + i
+#     if time <= N:
+#         dp_table[i] = max(max_value, P[i] + dp_table[time])
+#         max_value = dp_table[i]
+#     else:
+#         dp_table[i] = max_value
+# print(max_value)
 
 
 
