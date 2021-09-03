@@ -7,7 +7,7 @@ ______________________________
 
 ## 참가자
 
-~~이재빈~~, 이정기, 송다인, 정준우, 조원준
+~~이재빈~~, ~~이정기~~, ~~송다인~~, 정준우, 조원준
 
 <br/><br/>
 
@@ -25,7 +25,7 @@ ______________________________
 
 [문서 검색](https://www.acmicpc.net/problem/1543), &nbsp;[세 개의 소수 문제](https://www.acmicpc.net/problem/11502), &nbsp;[~~두
 동전~~](https://www.acmicpc.net/problem/16197), &nbsp;[감소하는 수](https://www.acmicpc.net/problem/1038), &nbsp;[~~미친로봇~~](https://www.acmicpc.net/problem/1405), &nbsp;[~~램프~~](https://www.acmicpc.net/problem/1034), &nbsp;[~~부등호~~](https://www.acmicpc.net/problem/2529), &nbsp; [숨바꼭질](https://www.acmicpc.net/problem/1697),
-&nbsp; [미로 탐색](https://www.acmicpc.net/problem/2178), &nbsp; [~~점프점프~~](https://www.acmicpc.net/problem/11060),
+&nbsp; [미로 탐색](https://www.acmicpc.net/problem/2178), &nbsp; [~~점프점프~~](https://www.acmicpc.net/problem/11060), &nbsp;[도영이가 만든 맛있는 음식](https://www.acmicpc.net/problem/2961),
 &nbsp; [~~스타트와 링크~~](https://www.acmicpc.net/problem/14889), &nbsp;[적록색약](https://www.acmicpc.net/problem/10026)
 
 <br/><br/><br/><br/><br/>
