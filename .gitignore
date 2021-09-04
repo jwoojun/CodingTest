@@ -1,9 +1,0 @@
-src/main/resources
-src/test
-src/main/java
-.gradle
-.idea/*
-gradlew.bat
-settings.gradle
-build.gradle
-gradlew
