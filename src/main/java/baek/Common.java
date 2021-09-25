@@ -1,2 +1,4 @@
-package baek;public class Common {
+package baek;
+
+public class Common {
 }
