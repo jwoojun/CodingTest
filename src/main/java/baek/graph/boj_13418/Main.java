@@ -44,7 +44,9 @@ public class Main {
             parent[i] = i;
         }
         int reverse = 0;
-        List<Building> lst = buildings.stream().sorted(Comparator.comparing(Building::getDirection).reversed()).collect(Collectors.toUnmodifiableList());
+        List<Building> lst = buildings.stream()
+                .sorted(Comparator.comparing(Building::getDirection).reversed())
+                .collect(Collectors.toUnmodifiableList());
         for(int i=lst.size()-1;i>=0; i--){
             Building building = buildings.get(i);
             int start = findParent(building.start);

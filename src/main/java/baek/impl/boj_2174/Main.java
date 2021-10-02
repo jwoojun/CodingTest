@@ -1,65 +1,101 @@
 package baek.impl.boj_2174;
 
-import java.awt.*;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.*;
 
 public class Main {
     static int n, m, a, b;
+    // 북 동 남 서
     static int[] dx = {0, 1, 0, -1};
     static int[] dy = {-1, 0, 1, 0};
     static int[][] board;
     static boolean[][] visitied;
     static Map<Integer, Robot> robots = new HashMap<>();
     static Queue<Command> queue = new LinkedList<>();
+    static boolean flag = false;
+
     public static void main(String[] args) throws Exception {
         a = input.integer();
         b = input.integer();
         n = input.integer();
         m = input.integer();
-        board = new int[a][b];
-        visitied = new boolean[a][b];
+        board = new int[b][a];
+        visitied = new boolean[b][a];
+        for(int i=0; i<n; i++){
+            int x = input.integer();
+            int y = input.integer();
+            String direction = input.next();
+            robots.put(i, new Robot(b-y, x-1, i, setDirection(direction)));
+            visitied[b-y][x-1] = true;
+        }
+//        System.out.println("1=====");
+//        for(int i=0; i<b;i++){
+//            System.out.println();
+//            for(int j=0; j<a; j++){
+//                System.out.print(visitied[i][j]+" ");
+//            }
+//        }
 
-        robotInit();
-        robots.values().forEach(System.out::println);
-        commandInit();
-        queue.forEach(System.out::println);
+        for (int i = 0; i < m; i++) {
+            int robotKind = input.integer();
+            String command = input.next();
+            int commandCount = input.integer();
+            move(robotKind, command, commandCount);
+            print();
+            System.out.println("1회===========");
+        }
 
-        while (!queue.isEmpty()) {
-            Command command = queue.poll();
-            int robotKind = command.kind;
-            int number = command.number;
-            String c = command.direction;
-      System.out.println(c);
-            Robot robot = robots.get(robotKind);
-            if (c.equals("L") || c.equals("R")) {
-                rotate(robot, c);
-                robots.put(robotKind, robot);
+    }
+
+    static void print() {
+        for (int i = 0; i < b; i++) {
+            System.out.println();
+            for (int j = 0; j < a; j++) {
+                System.out.print(visitied[i][j] + " ");
             }
-            else{
-        System.out.println("===============");
-                for (int i = 0; i < number; i++) {
-                    int next_x = robot.x + dx[cal(c)];
-                    int next_y = robot.y + dy[cal(c)];
-                    if (isPossible(next_x, next_y)) {
-                        if(meetRobot(next_x, next_y)){
-                            Robot findRobot = findRobot(next_x, next_y);
-                            System.out.println("Robot "+(robot.kind+1)+"crashes into robot "+(findRobot.kind+1));
-                            System.exit(0);
-                        }else {
-                            queue.add(new Command(robot.kind, number-1, c));
-                        }
-                    } else {
-                        System.out.println("Robot "+(robot.kind)+" crashes into the wall");
+        }
+    }
+
+    static void move(int robotKind, String direction, int commandCount){
+        for (int i = 0; i < commandCount; i++) {
+            // map에서 로봇 찾기
+            Robot robot = robots.get(robotKind-1);
+
+            // 방향이 L또는 R일 경우 단순 회전
+            if (direction.equals("L") || direction.equals("R")) {
+                rotate(robot, direction);
+
+                // 직진 -> 이동이 있기 때문에 다음 칸 체크
+            } else if(direction.equals("F")){
+                int next_x = robot.x + dx[robot.directionNumber];
+                int next_y = robot.y + dy[robot.directionNumber];
+
+                if (isPossible(next_x, next_y)) {
+
+                    // 이미 다른 로봇이 위치에 존재하면 충돌 후 종료
+                    if (visitied[next_x][next_y]) {
+                        Robot findRobot = findRobot(next_x, next_y);
+                        System.out.println(
+                                "Robot " + (robot.kind+1) + "crashes into robot " + (findRobot.kind+1));
                         System.exit(0);
+                        // 로봇이 없으면 로봇의 현재 위치는 false로, 이동 후 위치는 true로
+                    } else {
+                        robot.x = next_x;
+                        robot.y = next_y;
+                        visitied[robot.x][robot.y] = false;
+                        visitied[next_x][next_y] = true;
                     }
+                    // 이동 불가능하다면 벽에 박고 종료
+                } else {
+                    System.out.println("Robot " + (robot.kind+1) + " crashes into the wall");
+                    System.exit(0);
                 }
             }
         }
+        // 다 돌았는데 무사하면 OK
         System.out.println("OK");
         System.exit(0);
-
     }
 
     static Robot findRobot(int x, int y){
@@ -67,52 +103,44 @@ public class Main {
                 .stream().filter(r->r.x==x && r.y == y)
                 .findFirst().get();
     }
-    static int cal(String s) {
-        if(s.equals("N")){
-            return 0;
-        }else if(s.equals("S")){
-            return 2;
-        } else if(s.equals("W")){
-            return 3;
-        } else {
-            return 1;
 
+    // 북(0) 동(1) 남(2) 서(3)
+    static int setDirection(String command) {
+        if (command.equals("N")) {
+            return 0;
+        }
+        else if (command.equals("E")) {
+            return 1;
+        }
+        else if (command.equals("S")) {
+            return 2;
+        }
+        else  {
+            return 3;
         }
     }
-    static boolean meetRobot(int x, int y){
-        return visitied[x][y];
 
-    }
+
     static void rotate(Robot robot, String command){
         if(command.equals("L")){
-            robot.directionNumber = (robot.directionNumber +cal(command))%4;
+            if(robot.directionNumber == 0){
+                robot.directionNumber = 3;
+            }else {
+                robot.directionNumber -=1;
+            }
         }else if(command.equals("R")){
-            robot.directionNumber = (robot.directionNumber +cal(command)*3)%4;
+            if(robot.directionNumber == 3){
+                robot.directionNumber = 0;
+            }else {
+                robot.directionNumber +=1;
+            }
         }
     }
 
     static boolean isPossible(int x, int y) {
-        return x >= 0 && x < n && y >= 0 && y < m;
+        return x >= 0 && x < b && y >= 0 && y < a;
     }
 
-    static void robotInit() throws Exception {
-        for(int i=0; i<n; i++){
-            int x = input.integer();
-            int y = input.integer();
-            String direction = input.next();
-            robots.put(i, new Robot(x, y, i, cal(direction)));
-            visitied[x-1][y-1] = true;
-        }
-    }
-
-    static void commandInit() throws Exception {
-        for (int i = 0; i < m; i++) {
-            int kind = input.integer();
-            String command = input.next();
-            int number = input.integer();
-            queue.add(new Command(kind, number, command));
-        }
-    }
 
     static Input input = new Input();
     static class Command {
@@ -123,15 +151,6 @@ public class Main {
             this.kind = kind;
             this.number = number;
             this.direction = direction;
-        }
-
-        @Override
-        public String toString() {
-            return "Command{" +
-                    "kind=" + kind +
-                    ", number=" + number +
-                    ", direction='" + direction + '\'' +
-                    '}';
         }
     }
 
@@ -168,14 +187,40 @@ public class Main {
             if(!st.hasMoreElements()) st = new StringTokenizer(br.readLine());
             return st.nextToken();
         }
-        static boolean locatedAlready(int x, int y) {
-            return visitied[x][y];
-        }
-
-        static boolean meetWall(int x, int y) {
-            return x == n - 1 || y == m - 1;
-        }
-
 
     }
 }
+
+// 추가 테케 1 -> 통과
+//3 3
+//1 9
+//2 2 W
+//1 F 1
+//1 L 1
+//1 F 1
+//1 L 1
+//1 F 2
+//1 L 5
+//1 F 2
+//1 R 3
+//1 F 2
+
+
+
+// 추가 테케2 -> 실패
+//5 5
+//2 3
+//3 3 E
+//4 5 N
+//2 L 3
+//2 R 8
+//2 F 3
+// https://www.acmicpc.net/board/view/35421
+
+// 추가 테케3 -> 통과
+//1 1
+//1 1
+//1 1 E
+//1 F 1
+//https://www.acmicpc.net/board/view/49983
+

@@ -1,6 +1,5 @@
 package data_structure.treeset;
 
-import org.python.antlr.runtime.tree.Tree;
 
 import java.util.Set;
 import java.util.TreeSet;

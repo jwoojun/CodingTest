@@ -43,10 +43,11 @@ public class Main {
                     }
                 }
             }
+
             if(area.isEmpty()){
                 break;
             }
-            System.out.println("--");
+
             Point point = area.poll();
             answer += Math.pow(point.blockCount, 2);
             erase(point.x, point.y, map[point.x][point.y]);
@@ -69,6 +70,7 @@ public class Main {
         }
     }
 
+    //
     static void gravity(){
         for(int i=0; i<n; i++){
             int bottom = n-1;
@@ -84,8 +86,8 @@ public class Main {
                 }
             }
         }
-
     }
+
     static boolean isPossible(int x, int y){
         return x>=0 && x<n && y>= 0 && y<n;
     }
@@ -105,7 +107,7 @@ public class Main {
                 int next_y = point.y + dy[i];
                 if(isPossible(next_x, next_y)){
                     if (!visit[next_x][next_y]
-                            && (map[next_x][next_y] == color || map[next_x][next_y] == 0)) {
+                            && (map[next_x][next_y] == color || map[next_x][next_y] == 0)) {//
                         queue.add(new Point(next_x, next_y, 0, 0));
                         map[next_x][next_y] = -2;
                         visit[next_x][next_y] = true;
@@ -113,16 +115,14 @@ public class Main {
                 }
             }
         }
-
     }
-
 
     static void bfs(int x, int y, int color){
         Queue<Point> queue = new LinkedList<>();
         queue.add(new Point(x, y, 0, 0));
         visited[x][y] = true;
         int blockCount = 0;
-        int rainbowBlock = 0;
+        int rainbowBlock = 0;  // 뭘 타고 들어왔는지를 봐야 한다.
         while(!queue.isEmpty()){
             blockCount ++ ;
             Point point = queue.poll();
@@ -184,10 +184,6 @@ public class Main {
         }
     }
 
-
-
-
-
     static boolean checkValue(int x, int y, int x2, int y2){
         return (Math.abs(x-x2) + Math.abs(y-y2)) == 1;
     }
@@ -202,7 +198,6 @@ public class Main {
     }
 
 // 아... ㅜㅜ
-
 }
 
 
