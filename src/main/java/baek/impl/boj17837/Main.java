@@ -34,6 +34,7 @@ public class Main {
                 map[row][column] = new Point(row, column, color);
             }
         }
+
         System.out.println("2======================");
         for (int count = 0; count < k; count++) {
             int row = input.integer();
@@ -45,7 +46,6 @@ public class Main {
             visit[row - 1][column - 1] = true;
         }
         System.out.println("3======================");
-
         while (!horses.isEmpty()) {
             validateGame(turn);
             Horse horse = horses.poll();
@@ -59,15 +59,18 @@ public class Main {
             int next_y = y + dy[direction - 1];
             if (isPossible(next_x, next_y)) {
                 System.out.println("---------------------------");
+
                 // 파란색 또는 장외일 경우
                 if (isBlue(map[next_x][next_y].color) || !isPossible(next_x, next_y)) {
                     int newDirection = changeDirection(direction);
                     int blue_x = x + dx[newDirection - 1];
                     int blue_y = y + dy[newDirection - 1];
                     int color = map[blue_x][blue_y].color;
+
                     // 파란색인데 이동 가능한 경우
                     if (isPossible(blue_x, blue_y)) {
                         if (isWhite(color)) {
+
                             // 다른 말이 있는 경우
                             if (visit[blue_x][blue_y]) {
                                 Horse existHorse = findHorse(blue_x, blue_y);
@@ -75,7 +78,7 @@ public class Main {
                                 turn++;
                                 overFour(existHorse.horses);
                                 visit[x][y] = false;
-                                System.out.println("존재하는 말="+existHorse);    // 다른 말이 없는 경우
+                                System.out.println("존재하는 말="+existHorse);
                                 System.out.println("파란색-한 번 이동. 이동할 칸에 말 존재");
 
                             } else {
@@ -123,7 +126,6 @@ public class Main {
                 if(isPossible(next_x, next_y)){
                     if (isWhite(color)) {
                         if (visit[next_x][next_y]) {
-
                             Horse existHorse = findHorse(next_x, next_y);
                             System.out.println("존재하는 말="+existHorse);
                             existHorse.addAll(horse.horses);
@@ -280,9 +282,8 @@ public class Main {
         }
     }
 
-  // 흠...
+    // 흠...
 }
-
 
 class Test {
     public static void main(String[] args){

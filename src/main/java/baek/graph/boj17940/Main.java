@@ -8,70 +8,75 @@ import java.util.PriorityQueue;
 import java.util.StringTokenizer;
 
 public class Main {
-
     static int n;
     static int k;
-    static int[] company;
-    static int answer = 0;
-    static Point[][] map ;
-    static Point[][] graph ;
-    static int [] distance;
-    static int [] transfer;
+    static int [] company = new int[1001];
+    static int [][] map ;
+    static int [] distance = new int[1001];
+    static int [] transfer = new int[1001];
     static PriorityQueue<Point> queue = new PriorityQueue<>();
-    static boolean[] visit ;
+    static boolean[] visit = new boolean[1001];
+    static final int MAX_VALUE = 987654321;
+
     public static void main(String[] args) throws Exception {
         n = input.integer();
         k = input.integer();
-        visit = new boolean[n];
-        map = new Point[n][n];
-        graph = new Point[n][n];
-        distance = new int[n];
-        transfer = new int[n];
+        map = new int[n][n];
 
-        for(int i=0; i<n; i++){
-            distance[i] = Integer.MAX_VALUE;
-            transfer[i] = Integer.MAX_VALUE;
-        }
-        for(int i=0; i<n; i++){
-            company[i]=input.integer();
-        }
-
-        for(int row=0; row<n; row++){
-            for(int column=0; column<k; column++){
-                int value = input.integer();
-                map[row][column] = new Point(row, column, value);
-            }
+        for(int number=0; number<n; number++){
+            company[number] = input.integer();
+            transfer[number] = MAX_VALUE;
+            distance[number] = MAX_VALUE;
         }
 
         for(int row=0; row<n; row++){
             for(int column=0; column<n; column++){
-                if(map[row][column].value != 0){
-                    if(company[row] == company[column]) {
-                        graph[row][column] = new Point(row, column, map[row][column].value);
-                    }else {
-                        graph[row][column] = new Point(row, column, map[row][column].value+Integer.MAX_VALUE);
+                map[row][column] = input.integer();
+            }
+        }
+
+        distance[0] = 0;
+        transfer[0] = 0;
+        queue.add(new Point(0, 0, 0));
+        solve();
+        System.out.println(transfer[k]+" "+distance[k]);
+    }
+
+    static void solve(){
+        while (!queue.isEmpty()){
+            Point current = queue.poll();
+            if(visit[current.no]){
+                continue;
+            }
+            visit[current.no] = true;
+            List<Point> connections = findConnection(current.no);
+            for (Point next : connections) {
+                if (next.transfer + transfer[current.no] < transfer[next.no]) {
+                    transfer[next.no] = transfer[current.no] + next.transfer;
+                    distance[next.no] = distance[current.no] + next.distance;
+                    queue.add(new Point(next.no, transfer[next.no], distance[next.no]));
+                } else if (next.transfer + transfer[current.no] == transfer[next.no]) {
+                    if (next.distance + distance[current.no] < distance[next.no]) {
+                        transfer[next.no] = transfer[current.no] + next.transfer;
+                        distance[next.no] = distance[current.no] + next.distance;
+                        queue.add(new Point(next.no, transfer[next.no], distance[next.no]));
                     }
                 }
             }
         }
-        transfer[0]=0;
-        distance[0]=0;
-        queue.add(new Point(0, 0,0));
-
-        while (!queue.isEmpty()){
-            Point currentCompany = queue.poll();
-            if(visit[currentCompany.no]){
-                continue;
-            }
-            visit[currentCompany.no]= true;
-
-        }
     }
 
-    static int djstra(){
-        List<Point> lst = new ArrayList<>();
-        return 1;
 
+
+    static List<Point> findConnection(int current){
+        List<Point> connections = new ArrayList<>();
+        for(int number=0; number<n; number++){
+            if(map[current][number]>0){
+                int transfer = company[current] != company[number] ? 1 : 0;
+                connections.add(new Point(number, transfer, map[current][number]));
+            }
+        }
+        return connections;
     }
 
     static Input input = new Input();
@@ -83,21 +88,27 @@ public class Main {
             return Integer.parseInt(st.nextToken());
         }
     }
-    static class Point implements Comparable<Point>{
-        int no;
-        int transfer;
-        int value;
 
+    static class Point implements Comparable<Point> {
+        private int no;
+        private int transfer;
+        private int distance;
 
-        public Point(int no, int transfer, int value) {
+        public Point(int no, int transfer, int distance) {
             this.no = no;
             this.transfer = transfer;
-            this.value = value;
+            this.distance = distance;
         }
 
         @Override
-        public int compareTo(Point point) {
-            return this.value - point.value;
+        public int compareTo(Point o) {
+            if (this.transfer != o.transfer) {
+                return this.transfer - o.transfer;
+            }
+            return this.distance - o.distance;
         }
     }
 }
+
+
+

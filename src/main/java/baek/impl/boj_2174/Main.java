@@ -20,22 +20,16 @@ public class Main {
         b = input.integer();
         n = input.integer();
         m = input.integer();
-        board = new int[b][a];
-        visitied = new boolean[b][a];
+        board = new int[b+1][a+1];
+        visitied = new boolean[b+1][a+1];
+
         for(int i=0; i<n; i++){
             int x = input.integer();
             int y = input.integer();
             String direction = input.next();
-            robots.put(i, new Robot(b-y, x-1, i, setDirection(direction)));
-            visitied[b-y][x-1] = true;
+            robots.put(i, new Robot(b-y, x, i, setDirection(direction)));
+            visitied[b-y][x] = true;
         }
-//        System.out.println("1=====");
-//        for(int i=0; i<b;i++){
-//            System.out.println();
-//            for(int j=0; j<a; j++){
-//                System.out.print(visitied[i][j]+" ");
-//            }
-//        }
 
         for (int i = 0; i < m; i++) {
             int robotKind = input.integer();
@@ -45,7 +39,6 @@ public class Main {
             print();
             System.out.println("1회===========");
         }
-
     }
 
     static void print() {
@@ -62,6 +55,7 @@ public class Main {
             // map에서 로봇 찾기
             Robot robot = robots.get(robotKind-1);
 
+            System.out.println("Robot= "+robot);
             // 방향이 L또는 R일 경우 단순 회전
             if (direction.equals("L") || direction.equals("R")) {
                 rotate(robot, direction);
@@ -72,18 +66,18 @@ public class Main {
                 int next_y = robot.y + dy[robot.directionNumber];
 
                 if (isPossible(next_x, next_y)) {
-
                     // 이미 다른 로봇이 위치에 존재하면 충돌 후 종료
                     if (visitied[next_x][next_y]) {
                         Robot findRobot = findRobot(next_x, next_y);
                         System.out.println(
                                 "Robot " + (robot.kind+1) + "crashes into robot " + (findRobot.kind+1));
                         System.exit(0);
+
                         // 로봇이 없으면 로봇의 현재 위치는 false로, 이동 후 위치는 true로
                     } else {
+                        visitied[robot.x][robot.y] = false;
                         robot.x = next_x;
                         robot.y = next_y;
-                        visitied[robot.x][robot.y] = false;
                         visitied[next_x][next_y] = true;
                     }
                     // 이동 불가능하다면 벽에 박고 종료
@@ -120,7 +114,6 @@ public class Main {
         }
     }
 
-
     static void rotate(Robot robot, String command){
         if(command.equals("L")){
             if(robot.directionNumber == 0){
@@ -128,7 +121,7 @@ public class Main {
             }else {
                 robot.directionNumber -=1;
             }
-        }else if(command.equals("R")){
+        } else if(command.equals("R")){
             if(robot.directionNumber == 3){
                 robot.directionNumber = 0;
             }else {
@@ -209,12 +202,11 @@ public class Main {
 
 // 추가 테케2 -> 실패
 //5 5
-//2 3
+//2 2
 //3 3 E
 //4 5 N
 //2 L 3
 //2 R 8
-//2 F 3
 // https://www.acmicpc.net/board/view/35421
 
 // 추가 테케3 -> 통과
