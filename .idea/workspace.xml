@@ -5,162 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f172bc02-2a3b-4a6a-b510-abc43b1a0900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj14502/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17144/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17822/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_18428/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2206/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2580/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2580/Position.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2580/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2580/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Other.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_16946/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_16946/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_2206/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_2206/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_9663/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/자물쇠와열쇠/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/자물쇠와열쇠/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/행렬테두리회전/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/행렬테두리회전/testcase.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/이것이코딩테스트다/hanbit/impl/p115/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/이것이코딩테스트다/hanbit/impl/p118/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/BOJ_16974.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/Testtt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/Common.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/Day.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/DayOfTheWeek.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/DayOfWeekValue.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/EnumMapper.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/Time.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_1038/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_1038/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_1062/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_1062/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_11502/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_11502/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_1260/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_1260/Main$Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_1260/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_12851/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_12851/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_1405/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_1405/Main$Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_1405/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_14395/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_14395/Main$Number.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_14395/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_14888/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/brute_force/boj_14888/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/dp/boj_2294/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/dp/boj_2294/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/graph/boj17940/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/graph/boj17940/Main$Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/graph/boj17940/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/graph/boj_13418/Main$Building.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/graph/boj_13418/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/graph/boj_13418/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/graph/boj_6497/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/graph/boj_6497/Main$Node.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/graph/boj_6497/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj17837/Main$Horse.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj17837/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj17837/Main$Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj17837/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj17837/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj2573/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj2573/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_14499/BOJ_14499.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_14503/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_14503/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_14503/Practice$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_14503/Practice.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_14890/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_14890/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_15662/Main$Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_15662/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_15662/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_16935/BOJ_Answer.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_16935/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_16935/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_17144/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_17144/Main$Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_17144/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_17822/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_17822/Main$Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_17822/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_17822/My$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_17822/My.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_21608/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_21608/Main$Shark.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_21608/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_21609/DiscountConditionType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_21609/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_21609/Main$Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_21609/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_21610/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_21610/Test.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_21610/Ttt.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_2174/Main$Command.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_2174/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_2174/Main$Robot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_2174/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_2961/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/boj_2961/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/practice/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/practice/Main$Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/impl/practice/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/string/boj_1543/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/baek/string/boj_1543/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/BOJ_16974.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_16974/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Testtt.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/Common.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/DayOfTheWeek.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/DayOfTheWeek.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/brute_force/boj_1038/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_1038/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/brute_force/boj_1062/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_1062/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/brute_force/boj_11502/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_11502/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/brute_force/boj_1260/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_1260/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/brute_force/boj_12851/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_12851/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/brute_force/boj_1405/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_1405/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/brute_force/boj_14395/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_14395/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/brute_force/boj_14888/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_14888/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/dp/boj_2294/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/graph/boj17940/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/graph/boj17940/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/graph/boj_13418/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/graph/boj_13418/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/graph/boj_6497/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/graph/boj_6497/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj17837/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj17837/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj2573/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj2573/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_14499/BOJ_14499.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_14499/BOJ_14499.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_14503/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_14503/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_14503/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_14503/Practice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_14890/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_14890/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_15662/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_15662/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_16935/BOJ_Answer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_16935/BOJ_Answer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_16935/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_16935/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_17144/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17144/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_17780/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17780/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_17822/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17822/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_17822/My.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_21608/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_21608/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_21609/DiscountConditionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_21609/DiscountConditionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_21609/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_21609/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_21610/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_21610/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_2174/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2174/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/boj_2961/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2961/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/impl/practice/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/practice/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/baek/string/boj_1543/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/string/boj_1543/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/python/study/BOJ-2580.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/study/BOJ-2580.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2580/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Command.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Snake.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Other$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Other.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj14502/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj14502/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj17837/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj17837/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2580/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Position.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Other.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -315,12 +175,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_2580.Main" />
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_3190.Main2" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.impl.boj_2580.*" />
+          <option name="PATTERN" value="boj.impl.boj_3190.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -329,11 +189,11 @@
       </method>
     </configuration>
     <configuration name="Position" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_2580.Position" />
+      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_3190.Position" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.impl.boj_2580.*" />
+          <option name="PATTERN" value="boj.impl.boj_3190.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -400,21 +260,21 @@
     </configuration>
     <list>
       <item itemvalue="Application.Java" />
-      <item itemvalue="Application.Main" />
       <item itemvalue="Python.BOJ-15989" />
       <item itemvalue="Python.BOJ-2206" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Test (1)" />
       <item itemvalue="Application.Position" />
+      <item itemvalue="Application.Main2" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Position" />
-        <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main2" />
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -648,7 +508,7 @@
       <workItem from="1633564792706" duration="15389000" />
       <workItem from="1633593636318" duration="7095000" />
       <workItem from="1633635056988" duration="5436000" />
-      <workItem from="1633643608454" duration="24168000" />
+      <workItem from="1633643608454" duration="33123000" />
     </task>
     <servers />
   </component>

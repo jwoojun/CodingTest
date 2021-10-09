@@ -11,6 +11,7 @@ public class Main2 {
     static int[][] board;
     static boolean[][] visited;
     static Map<Integer, Command> commands = new HashMap<>();
+
     static int[] dx = {0, 1, 0, -1};
     static int[] dy = {-1, 0, 1, 0};
     public static void main(String[] args) throws Exception {
@@ -23,7 +24,6 @@ public class Main2 {
             int col = input.integer();
             board[row - 1][col - 1] = 1;
         }
-
         l = input.integer();
         for (int number = 0; number < l; number++) {
             int time = input.integer();
@@ -49,25 +49,19 @@ public class Main2 {
                 } else {
                     s.path.add(new Point(next_x, next_y));
                     visited[next_x][next_y] = true;
-                    if (board[next_x][next_y] == 1) {
+                    if (isApple(next_x, next_y)) {
                         board[next_x][next_y] = 0;
-                        if(commands.containsKey(time)){
-                            Command command = commands.get(time);
-                            int direction = turn(command.command, s.direction);
-                            queue.add(new Snake(next_x, next_y, direction, s.path));
-                        }else {
-                            queue.add(new Snake(next_x, next_y, s.direction, s.path));
-                        }
-                    } else if(board[next_x][next_y] == 0){
+                    }else if (!isApple(next_x, next_y)) {
                         Point point = s.path.pollFirst();
                         visited[point.x][point.y] = false;
-                        if(commands.containsKey(time)){
-                            Command command = commands.get(time);
-                            int direction = turn(command.command, s.direction);
-                            queue.add(new Snake(next_x, next_y, direction, s.path));
-                        }else {
-                            queue.add(new Snake(next_x, next_y, s.direction, s.path));
-                        }
+                    }
+                    if(commands.containsKey(time)){
+                        Command command = commands.get(time);
+                        int direction = turn(command.command, s.direction);
+                        commands.remove(time);
+                        queue.add(new Snake(next_x, next_y, direction, s.path));
+                    }else {
+                        queue.add(new Snake(next_x, next_y, s.direction, s.path));
                     }
                 }
             } else {
@@ -81,14 +75,22 @@ public class Main2 {
         return visited[x][y];
     }
 
+    static boolean isApple(int x, int y){
+        return board[x][y] == 1;
+    }
+
     static int turn(String command, int direction) {
         if (command.equals("L")) {
             direction -= 1;
-            if (direction == -1) direction = 3;
+            if (direction == -1) {
+                direction = 3;
+            }
             return direction;
         } else if(command.equals("D")){
             direction+=1;
-            if (direction == 4) direction = 0;
+            if (direction == 4) {
+                direction = 0;
+            }
             return direction;
         }
         return direction;
@@ -114,14 +116,6 @@ public class Main2 {
         public Command(int time, String command) {
             this.time = time;
             this.command = command;
-        }
-
-        @Override
-        public String toString() {
-            return "Command{" +
-                    "time=" + time +
-                    ", command='" + command + '\'' +
-                    '}';
         }
     }
 

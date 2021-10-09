@@ -45,6 +45,7 @@ public class Main {
             horses.add(horse);
             visit[row - 1][column - 1] = true;
         }
+
         System.out.println("3======================");
         while (!horses.isEmpty()) {
             validateGame(turn);
@@ -58,8 +59,6 @@ public class Main {
             int next_x = x + dx[direction - 1];
             int next_y = y + dy[direction - 1];
             if (isPossible(next_x, next_y)) {
-                System.out.println("---------------------------");
-
                 // 파란색 또는 장외일 경우
                 if (isBlue(map[next_x][next_y].color) || !isPossible(next_x, next_y)) {
                     int newDirection = changeDirection(direction);

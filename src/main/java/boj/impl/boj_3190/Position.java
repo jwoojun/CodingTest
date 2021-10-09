@@ -1,4 +1,4 @@
-package boj.impl.boj_2580;
+package boj.impl.boj_3190;
 
 public class Position {
     static int x = 1;
