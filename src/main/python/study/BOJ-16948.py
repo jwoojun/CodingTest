@@ -2,6 +2,10 @@ import sys
 from collections import deque
 input = sys.stdin.readline
 
+
+n = map(int ,input())
+
+
 move = [(-2, -1), (-2, 1), (0, -2), (0, 2), (2,-1), (2, 1)]
 N = int(input())
 visited = [[0]*(N) for _ in range(N)]

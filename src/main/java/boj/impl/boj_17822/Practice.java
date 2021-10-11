@@ -23,6 +23,7 @@ public class Practice {
         m = input.integer();
         t = input.integer();
         board = new int[n][m];
+
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 board[i][j] = input.integer();
@@ -34,91 +35,84 @@ public class Practice {
             d = input.integer();
             k = input.integer();
             visited = new int[n][m];
-            for (int i = x; i <= n; i += x) {
-                roate(i);
+            for(int number=x; number<=n; number+=x){
+                roate(number);
             }
-            if (!deleteSameNumber()) {
+            if (!findSameNumber()) {
                 operate();
             }
         }
         sum();
     }
-    static void print(){
-        for(int i=0;i<n; i++){
-            for(int j=0; j<m; j++){
-                System.out.print(board[i][j]);
-            }
-            System.out.println();
-        }
-    }
 
-    static void roate(int number){
-        for(int num=0; num<k; num++)
+    static void roate(int number) {
+        for (int p = 0; p < k; p++) {
             if (d == 0) {
-                int temp = board[number-1][m-1];
-                for(int j=m-1; j>=1; j--){
-                    board[number-1][j] = board[number-1][j-1];
+                int temp = board[number - 1][m - 1];
+                for (int i = m - 1; i > 0; i--) {
+                    board[number - 1][i] = board[number - 1][i - 1];
                 }
-                board[number-1][0] = temp;
-            }else {
-                int temp = board[number-1][0];
-                for(int j=1; j<m; j++){
-                    board[number-1][j-1] = board[number-1][j];
+                board[number - 1][0] = temp;
+            } else if (d == 1) {
+                int temp = board[number - 1][0];
+                for (int i = 0; i < m - 1; i++) {
+                    board[number - 1][i] = board[number][i + 1];
                 }
-                board[number-1][m-1] = temp;
+                board[number - 1][m - 1] = temp;
             }
+        }
     }
 
     static void operate(){
         double sum = 0;
         double count = 0;
-        double average;
+        double avg;
         for(int row=0; row<n; row++){
-            for(int column=0; column<m; column++){
-                if (board[row][column] > 0) {
-                    sum += board[row][column];
+            for(int col=0; col<m; col++){
+                if(board[row][col]>0){
+                    sum+=board[row][col];
                     count++;
                 }
             }
         }
-        if(count == 0){
-            return ;
-        }
-        average = sum/count;
+
+        if(count == 0) return;;
+        avg = sum/count;
+
         for(int row=0; row<n; row++){
-            for(int column=0; column<m; column++){
-                if(board[row][column] == 0){
+            for(int col=0; col<m; col++){
+                if(board[row][col]==0){
                     continue;
                 }
-                if (board[row][column] < average) {
-                    board[row][column] += 1;
-                }else if(board[row][column] > average){
-                    board[row][column] -=1;
+                if(board[row][col]<avg){
+                    board[row][col]+=1;
+                }
+                else if(board[row][col]>avg){
+                    board[row][col]-=1;
                 }
             }
         }
     }
 
-
-
-    static boolean deleteSameNumber(){
+    static boolean findSameNumber(){
         boolean sameNumber = false;
         for(int row=0; row<n; row++){
-            for(int column=0; column < m; column++){
-                if(board[row][column] == 0 || visited[row][column] == -1){
+            for(int col=0; col<m; col++){
+                if(board[row][col] ==0 || visited[row][col] == -1){
                     continue;
                 }
-                Point point = new Point(row, column);
-                queue.add(point);
+                Point point = new Point(row, col);
                 points.add(point);
-                bfs(board[row][column]);
+                queue.add(point);
+                visited[point.x][point.y] = -1;
+                bfs(board[row][col]);
                 if(points.size()>1){
                     sameNumber = true;
-                    for(Point each : points){
-                        board[each.x][each.y] = 0;
+                    for(Point eachPoint : points){
+                        board[eachPoint.x][eachPoint.y] = 0;
                     }
+                    points.clear();
                 }
-                points.clear();
             }
         }
         return sameNumber;
@@ -127,40 +121,43 @@ public class Practice {
     static void bfs(int number){
         while(!queue.isEmpty()){
             Point point = queue.poll();
-            int x = point.x;
-            int y = point.y;
-            for(int i=0; i< 4; i++){
-                int next_x = x + dx[i];
-                int next_y = y + dy[i];
+            for(int i=0; i<4; i++){
+                int next_x = point.x + dy[i];
+                int next_y = point.y + dx[i];
                 if(next_y>m-1){
                     next_y = 0;
-                } else if(next_y<0){
+                }else if(next_y<0){
                     next_y = m-1;
                 }
-                if(next_x>n-1 || next_x<0 || visited[next_x][next_y] == -1){
+                if(next_x<0 || next_x>n-1 || visited[next_x][next_y]==-1){
                     continue;
                 }
                 if(board[next_x][next_y] == number){
                     visited[next_x][next_y] = -1;
-                    Point next = new Point(next_x, next_y);
-                    queue.add(next);
-                    points.add(next);
+                    Point newPoint = new Point(next_x, next_y);
+                    points.add(newPoint);
+                    queue.add(newPoint);
                 }
             }
         }
     }
 
     static void sum(){
-        int sum = 0;
+        int result = 0;
         for(int row=0; row<n; row++){
-            for(int column=0; column<m; column++){
-                sum += board[row][column];
+            for(int col=0; col<m; col++){
+                if(board[row][col] > 0){
+                    result+=board[row][col];
+                }
             }
         }
-        System.out.println(sum);
+        System.out.println(result);
         System.exit(0);
     }
 
+    static boolean movable(int x, int y){
+        return x>=0 && x<n;
+    }
 
     static Input input = new Input();
     static class Input {
@@ -179,6 +176,15 @@ public class Practice {
         public Point(int x, int y) {
             this.x = x;
             this.y = y;
+        }
+    }
+
+    static void print(){
+        for(int i=0;i<n; i++){
+            for(int j=0; j<m; j++){
+                System.out.print(board[i][j]);
+            }
+            System.out.println();
         }
     }
 }

@@ -3,7 +3,7 @@ package boj.impl.boj_3190;
 public class Position {
     static int x = 1;
     static int y = 0;
-    static int direction = 2;
+    static int direction = 0;
     static int [] dx = {1, -1, 0, 0};
     static int [] dy = {0, 0, 1, -1};
 

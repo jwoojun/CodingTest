@@ -5,22 +5,578 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f172bc02-2a3b-4a6a-b510-abc43b1a0900" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2580/Position.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Command.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Command.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Snake.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Snake.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Other$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Other.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj14502/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj14502/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj17837/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj17837/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2580/Position.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Position.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main2.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main2.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Other.java" beforeDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/executionHistory/executionHistory.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileChanges/last-build.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/fileHashes/fileHashes.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/6.8/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/md5-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/checksums/sha1-checksums.bin" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/configuration-cache/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/workspace-id.txt.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/JPASupport-project.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/artifacts/algorithm_main_javaEEApplication_exploded.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.at" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.s" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i.len" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/storage_v2/_src_/schema/information_schema.FNRwLQ.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/storage_v2/_src_/schema/mysql.osA4Bg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/storage_v2/_src_/schema/performance_schema.kIw0nw.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/google-java-format.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/intellij-javadocs-4.0.1.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/libraries-with-intellij-classes.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules/algorithm.main.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/BOJ_1275.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/BOJ_12886.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/BOJ_14395.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/BOJ_16935.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/BOJ_2294.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Number.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/Stone.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/Common.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/Day.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/DayOfTheWeek.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/DayOfWeekValue.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/EnumMapper.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/Time.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_1038/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_1038/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_1062/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_1062/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_11502/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_11502/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_1260/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_1260/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_1260/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_12851/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_12851/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_1405/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_1405/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_1405/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_14395/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_14395/Main$Number.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_14395/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_14888/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_14888/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_16974/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj17940/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj17940/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj17940/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_13418/Main$Building.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_13418/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_13418/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_6497/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_6497/Main$Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_6497/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj14502/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj14502/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj17837/Main$Horse.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj17837/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj17837/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj17837/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj17837/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj2573/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj2573/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_14499/BOJ_14499.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_14503/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_14503/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_14503/Practice$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_14503/Practice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_14890/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_14890/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_15662/Main$Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_15662/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_15662/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_16935/BOJ_Answer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_16935/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_16935/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17144/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17144/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17144/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17144/Practice$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17144/Practice$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17144/Practice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Practice$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Practice$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Practice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_18428/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_18428/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_18428/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21608/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21608/Main$Shark.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21608/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21609/DiscountConditionType.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21609/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21609/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21609/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21610/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21610/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21610/Ttt.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2174/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2174/Main$Robot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2174/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2206/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2206/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2206/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2580/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2580/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2580/Practice$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2580/Practice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2580/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2961/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2961/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main$Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main$Snake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Command.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2$Snake.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Main2.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Position.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_3190/Test.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/practice/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/practice/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/practice/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Practice$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Practice$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Practice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_2206/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_2206/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_2206/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_2206/Practice$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_2206/Practice$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_2206/Practice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_9663/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/string/boj_1543/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/string/boj_1543/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/data_structure/hash/HashMap_.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/data_structure/kruskal/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/data_structure/kruskal/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/data_structure/linkedlist/LinkedList_impl.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/data_structure/linkedlist/Node.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/data_structure/segmenttree/Segment.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/data_structure/treeset/Child.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/data_structure/treeset/GrandParent.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/data_structure/treeset/Human.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/data_structure/treeset/TreeNode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/data_structure/treeset/TreeSetExample.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/자물쇠와열쇠/Practice.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/자물쇠와열쇠/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/행렬테두리회전/Solution.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/이것이코딩테스트다/hanbit/impl/p115/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/이것이코딩테스트다/hanbit/impl/p115/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/이것이코딩테스트다/hanbit/impl/p118/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/이것이코딩테스트다/hanbit/impl/p118/Main$Robot.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/이것이코딩테스트다/hanbit/impl/p118/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/META-INF/application.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/common/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BOJ_1275.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BOJ_12886.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BOJ_14395.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BOJ_16935.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BOJ_2294.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BOJ_2580.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/Common.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/DayOfTheWeek.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_1038/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_1062/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_11502/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_1260/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_12851/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_1405/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_14395/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_14888/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_16974/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Practice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/graph/boj17940/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/graph/boj_13418/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/graph/boj_6497/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj14502/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj17837/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj2573/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_14499/BOJ_14499.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_14503/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_14503/Practice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_14890/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_15662/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_16935/BOJ_Answer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_16935/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17144/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17144/Practice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17780/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17822/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17822/Practice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_18428/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_21608/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_21609/DiscountConditionType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_21609/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_21610/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2174/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2206/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2580/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2580/Practice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2580/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2961/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Main2.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Position.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_3190/Test.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/practice/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/search/boj_16946/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/search/boj_16946/Practice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/search/boj_2206/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/search/boj_2206/Practice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/search/boj_9663/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/string/boj_1543/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_structure/hash/HashMap_.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_structure/kruskal/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_structure/linkedlist/Node.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_structure/segmenttree/Segment.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_structure/treeset/TreeNode.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/data_structure/treeset/TreeSetExample.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/programmers/자물쇠와열쇠/Practice.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/programmers/자물쇠와열쇠/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/programmers/행렬테두리회전/Solution.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/programmers/행렬테두리회전/testcase.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/이것이코딩테스트다/hanbit/impl/p115/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/이것이코딩테스트다/hanbit/impl/p118/Main.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/BOJ-19237.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/BOJ-1974.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/BOJJJ.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Algorithm Implementation /Binary Search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Algorithm Implementation /Sort/Bubble Sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Algorithm Implementation /Sort/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Algorithm Implementation /Sort/merge_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Algorithm Implementation /Sort/quick_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Algorithm Implementation /Sort/selection_sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Algorithm Implementation /Tree.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Arrays/Monotonic Array.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Arrays/Move Element To End.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Arrays/Smallest Difference.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Arrays/Three Number Sum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Arrays/Two Number Sum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/BOJ-16325.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/DoubleLinkedList.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Hash/Programmers-완주하지 못한 선수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Hash/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Hash/위장.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Hash/전화번호 목록.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Implementation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Implementation/그룹 단어 체커.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Implementation/덩치.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Implementation/문제선정하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Implementation/시각.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Implementation/신규 아이디 추천.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Implementation/실패율.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/LinkedList.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Recursion/Nth Fibonacci.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Recursion/Powerset.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Recursion/ProductSum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Recursion/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Recursion/getNthFib.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/Binary Search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/Boj10815.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/Boj13711.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/Boj1654.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/Boj2110.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/Boj2805.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/Search For Range.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/Search In Sorted Matrix.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/Shifted Binary Search.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/binary_search/Boj1072.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/binary_search/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/binary_search/개똥벌레.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/binary_search/떡볶이 떡 만들기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/binary_search/입국심사.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/소수 찾기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/여행가자.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/연구소.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/연산.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/이진탐색.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/최소 비용.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/타겟 넘버.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Search/회의준비.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Sort/Bubble Sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Sort/H-Index.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Sort/Insertion Sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Sort/insertionSort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Stack, Queue/Balanced Brackets.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Stack, Queue/Min Max Stack Construction.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Stack, Queue/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Stack, Queue/컨테이너 운반.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/String/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/String/거꾸로해도 이효리.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/String/문자열 압축.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/String/비밀지도.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/String/이진수2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/String/패턴 마디의 길이.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/Test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/Boj11179.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/Boj11779.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/Boj1644.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/Boj1922.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/Boj2056.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/Boj2644.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/Boj4803.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/네트워크 연결.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/도시 분할 계획.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/미래 도시.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/커리큘럼.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/tree/트리.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/구간 합 구하기 5.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/다익트라 구현.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/두 노드 간 경로 탐색.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/볼링 점수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/부분합.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/위상 정렬 구현.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/algo_expert/플로이드 워셜.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/binary_search/공유기 설치.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/binary_search/떡볶이 떡 만들기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/binary_search/부품 찾기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/binary_search/정렬된 배열에서 특정 수의 개수 구하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/dp/1로 만들기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/dp/개미전사.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/dp/금광.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/dp/못생긴 수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/dp/바닥 공사.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/dp/정수삼각형.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/dp/퇴사.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/graph/어두운 길.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/graph/커리큘럼.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/graph/탑승구.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/greedy/1이 될 때까지.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/greedy/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/greedy/거스름돈.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/greedy/숫자 카드 게임.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/greedy/큰 수의 법칙.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/implementation/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/implementation/게임 개발.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/implementation/상하좌우.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/implementation/시각.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/implementation/왕실의 나이트.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/implementation/자물쇠와 열쇠.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/search/감시피하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/search/경쟁적 전염.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/search/괄호 변환.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/search/병사 배치하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/search/음료수 얼려먹기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/search/인구이동.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/search/퇴사.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/search/특정 거리의 도시 찾기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/sort/Sort.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/sort/국영수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/sort/두 배열의 원소 교체.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/sort/성적이 낮은 순서로 학생 출력하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/book/Hanbit/sort/실패율.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/practice.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/BOJ-14395.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/BOJ-16637.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/BOJ-16948.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/BOJ-16964.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/BOJ-17086.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/BOJ-2580.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/BOJ-Test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/2021.05.22/BOJ-1213.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/2021.05.22/BOJ-15927.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/2021.05.22/BOJ-1922.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/2021.05.29/BOJ-11779.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/2021.05.29/BOJ-1647.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/2021.05.29/BOJ-1743.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/2021.05.29/BOJ-1922.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/2021.05.29/BOJ-4485.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/2021.05.29/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/2021.06.05/BOJ-1976.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/2021.06.05/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/BOJ-15989.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/BOJ-16940.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/BOJ-16948.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/BOJ-2206.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/Te.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-10422.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-10815.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-11058.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-12738.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-12852.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-12865.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-12869.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-1300.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-14567.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-15486.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-1654.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-2225.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-5557.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-9251.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/BOJ-9370.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/Boj11726.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/Boj11727.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/Boj13398.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/Boj1463.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/Boj2169.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/Boj2688.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/Boj4811.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/Boj9095.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/LCS 4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/MaxSubset Sum No Adjacent.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/dp/SingleCycleCheck.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/etc/cumulative_sum/BOJ-2143.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/etc/recursion/problems/Permutations/스크린샷 2021-07-09 오전 4.52.00.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/etc/recursion/problems/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/etc/recursion/problems/productsum/ProductSum.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/etc/recursion/problems/productsum/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/etc/recursion/problems/productsum/product_sum.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/etc/two_pointer/BOJ-1644.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/etc/two_pointer/BOJ-1806.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/etc/two_pointer/BOJ-2003.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/BOJ-1092.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/BOJ-12904.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/BOJ-13305.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/BOJ-1339.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/BOJ-13904.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/BOJ-1744.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/BOJ-1826.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/BOJ-19539.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/BOJ-2437.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/BOJ-2529.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/Boj11047.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/Boj1343.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/Boj1744.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/Boj19539.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/Boj2437.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/Boj2529.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/가장 큰 정사각형 찾기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/곱하기 혹은 더하기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/구명보트.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/땅따먹기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/럭키 스트레이트.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/모험가 길드.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/무지의먹방.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/문자열 뒤집기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/문자열 압축.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/문자열 재정렬.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/볼링공고르기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/블랙잭.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/소수 찾기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/올바른 괄호.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/음계.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/자물쇠와 열사.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/제곱 팰린드롬 수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/조이스틱.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/카펫.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/컴퓨터와 수 비교.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/큰 수 만들기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/튜플.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/팀 결성.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/포켓몬.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/greedy/화물도크.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/impl/BOJ-13460.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/impl/BOJ-15686.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/impl/BOJ-16235.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/impl/BOJ-16929.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/impl/BOJ-16939.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/impl/BOJ-17144.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/impl/BOJ-19237.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/impl/BOJ-3190.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/impl/dp.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/impl/fibo.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-10026.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-1034.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-1038.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-1062.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-11060.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-11502.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-1182.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-12960.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-1405.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-14442.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-14888.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-14889.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-1543.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-16197.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-16928.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-16947.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-1697.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-2178.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-2961.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-9663.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/Boj13023.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/Boj14502.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/Boj18405.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/binary_search/BOJ-1477.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/네트워크.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/단어변환.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/땅따먹기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/미로탈출.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/여행경로.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/연결 요소의 개수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/유기농 배추.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/인구이동.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/쿼드압축 후 개수 세기.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/타겟넘버.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/효율적인해킹.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/sort/BOJ-10825.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/string/BOJ-1786.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/string/BOJ-5052.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/string/Boj1213.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/string/Boj15927.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/string/Boj2002.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/string/Boj5430.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/string/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/올리브영.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/programmers/lv1/124 나라의 숫자.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/programmers/lv1/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/programmers/lv2/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/programmers/lv3/Programmers-타겟 넘버.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/programmers/lv3/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/programmers/lv4/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/programmers/기능 개발.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/programmers/프린터.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/programmers/피보나치수.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/올리브영2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/BOJ_16935Test.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,8 +694,13 @@
     <key name="CreateTestDialog.RecentsKey">
       <recent name="" />
     </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="boj.dp.boj_2294" />
+      <recent name="programmers.행렬테두리회전" />
+      <recent name="" />
+    </key>
   </component>
-  <component name="RunManager" selected="Application.Position">
+  <component name="RunManager" selected="Application.Practice (1)">
     <configuration name="Java" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -150,11 +711,11 @@
       </method>
     </configuration>
     <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_18428.Main" />
+      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_16939.Main" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.impl.boj_18428.*" />
+          <option name="PATTERN" value="boj.impl.boj_16939.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -163,11 +724,11 @@
       </method>
     </configuration>
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_3190.Main" />
+      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_2294.Main" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.impl.boj_3190.*" />
+          <option name="PATTERN" value="boj.dp.boj_2294.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,12 +736,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_3190.Main2" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_17822.Main" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.impl.boj_3190.*" />
+          <option name="PATTERN" value="boj.impl.boj_17822.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -188,12 +749,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Position" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_3190.Position" />
+    <configuration name="Practice (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_2294.Practice" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.impl.boj_3190.*" />
+          <option name="PATTERN" value="boj.dp.boj_2294.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -201,12 +762,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Test (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_3190.Test" />
+    <configuration name="Practice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_17822.Practice" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.impl.boj_3190.*" />
+          <option name="PATTERN" value="boj.impl.boj_17822.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -260,20 +821,20 @@
     </configuration>
     <list>
       <item itemvalue="Application.Java" />
+      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Python.BOJ-15989" />
       <item itemvalue="Python.BOJ-2206" />
-      <item itemvalue="Application.Main (1)" />
+      <item itemvalue="Application.Practice" />
+      <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (2)" />
-      <item itemvalue="Application.Test (1)" />
-      <item itemvalue="Application.Position" />
-      <item itemvalue="Application.Main2" />
+      <item itemvalue="Application.Practice (1)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Position" />
-        <item itemvalue="Application.Test (1)" />
+        <item itemvalue="Application.Practice (1)" />
         <item itemvalue="Application.Main (2)" />
-        <item itemvalue="Application.Main2" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Practice" />
         <item itemvalue="Application.Main (1)" />
       </list>
     </recent_temporary>
@@ -509,6 +1070,9 @@
       <workItem from="1633593636318" duration="7095000" />
       <workItem from="1633635056988" duration="5436000" />
       <workItem from="1633643608454" duration="33123000" />
+      <workItem from="1633752322057" duration="3570000" />
+      <workItem from="1633763355422" duration="48724000" />
+      <workItem from="1633915189003" duration="20171000" />
     </task>
     <servers />
   </component>
@@ -550,6 +1114,7 @@
     <SUITE FILE_PATH="coverage/algorithm$BOJ_12904.coverage" NAME="BOJ-12904 Coverage Results" MODIFIED="1625737509453" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/greedy" />
     <SUITE FILE_PATH="coverage/algorithm$BOJ_16928.coverage" NAME="BOJ-16928 Coverage Results" MODIFIED="1626552387836" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj/search" />
     <SUITE FILE_PATH="coverage/algorithm$Te.coverage" NAME="Te Coverage Results" MODIFIED="1628728818646" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj" />
+    <SUITE FILE_PATH="coverage/algorithm$aaf.coverage" NAME="aaf Coverage Results" MODIFIED="1633895328114" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj" />
     <SUITE FILE_PATH="coverage/algorithm$BOJ_17086.coverage" NAME="BOJ-17086 Coverage Results" MODIFIED="1629454252979" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study" />
     <SUITE FILE_PATH="coverage/algorithm$BOJ_13460.coverage" NAME="BOJ-13460 Coverage Results" MODIFIED="1628293079750" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj/impl" />
     <SUITE FILE_PATH="coverage/algorithm$BOJ_14442.coverage" NAME="BOJ-14442 Coverage Results" MODIFIED="1628263852879" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj/search" />
@@ -570,7 +1135,7 @@
     <SUITE FILE_PATH="coverage/algorithm$BOJ_1974.coverage" NAME="BOJ-1974 Coverage Results" MODIFIED="1629807845513" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python" />
     <SUITE FILE_PATH="coverage/algorithm$BOJ_14889__1_.coverage" NAME="BOJ-14889 (1) Coverage Results" MODIFIED="1626025272852" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj/greedy" />
     <SUITE FILE_PATH="coverage/algorithm$BOJ_1743.coverage" NAME="BOJ-1743 Coverage Results" MODIFIED="1625947060013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj/2021.05.29" />
-    <SUITE FILE_PATH="coverage/algorithm$BOJ_16948.coverage" NAME="BOJ-16948 Coverage Results" MODIFIED="1629632578725" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study" />
+    <SUITE FILE_PATH="coverage/algorithm$BOJ_16948.coverage" NAME="BOJ-16948 Coverage Results" MODIFIED="1633895241634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study" />
     <SUITE FILE_PATH="coverage/algorithm$___.coverage" NAME="특정 거리의 도시 찾기 Coverage Results" MODIFIED="1626665105595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/book/Hanbit/search" />
     <SUITE FILE_PATH="coverage/algorithm$BOJ_14889.coverage" NAME="BOJ-14889 Coverage Results" MODIFIED="1626025279870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj/search" />
     <SUITE FILE_PATH="coverage/algorithm$.coverage" NAME="올리브영 Coverage Results" MODIFIED="1629001963018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj" />

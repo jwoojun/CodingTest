@@ -1,41 +1,57 @@
 package programmers.자물쇠와열쇠;
 
+
 public class Solution {
+    static int[][] new_lock;
+    static int n;
+    static int m;
     public static boolean solution(int[][] key, int[][] lock) {
-        int n = lock.length;
-        int m = key.length;
-        int[][] new_lock = new int[n * 3][n * 3];
-        // 중앙에 key값
-        for (int row = 0; row < n; row++) {
-            for (int column = 0; column < n; column++) {
-                new_lock[n + row][n + column] = lock[row][column];
-            }
-        }
+        n = lock.length;
+        m = key.length;
+        new_lock = new int[n * 3][n * 3];
+
+        insertCenterNumber(lock);
 
         for (int rotation = 0; rotation < 4; rotation++) {
-            key = rotate(key, n);
+            key = rotate(key);
             for (int x = 0; x < n * 2; x++) {
                 for (int y = 0; y < n * 2; y++) {
-                    for (int row = 0; row < m; row++) {
-                        for (int column = 0; column < m; column++) {
-                            new_lock[x + row][y + column] += key[row][column];
-                        }
-                    }
+                    insertKey(key, x, y);
                     if (check(new_lock)) {
                         return true;
                     }
-                    for (int row = 0; row < m; row++) {
-                        for (int column = 0; column < m; column++) {
-                            new_lock[x + row][y + column] -= key[row][column];
-                        }
-                    }
+                    removeKey(key, x, y);
                 }
             }
         }
         return false;
     }
 
-    public static int[][] rotate(int[][] key, int n) {
+    private static void insertCenterNumber(int [][] lock) {
+        for (int row = 0; row < n; row++) {
+            for (int column = 0; column < n; column++) {
+                new_lock[n + row][n + column] = lock[row][column];
+            }
+        }
+    }
+
+    private static void insertKey(int[][] key, int x, int y) {
+        for (int row = 0; row < m; row++) {
+            for (int column = 0; column < m; column++) {
+                new_lock[x + row][y + column] += key[row][column];
+            }
+        }
+    }
+
+    private static void removeKey(int[][] key, int x, int y) {
+        for (int row = 0; row < m; row++) {
+            for (int column = 0; column < m; column++) {
+                new_lock[x + row][y + column] -= key[row][column];
+            }
+        }
+    }
+
+    public static int[][] rotate(int[][] key) {
         int r = key.length;
         int c = key[0].length;
         int[][] result = new int[r][c];
@@ -54,10 +70,7 @@ public class Solution {
                 System.out.print(new_lock[row][column] + " ");
             }
         }
-        System.out.println("===========================================");
     }
-
-
 
     public static boolean check(int[][] new_lock) {
         int lock_length = new_lock.length / 3;
@@ -76,17 +89,5 @@ public class Solution {
         int[][] lock = {{1, 1, 1}, {1, 1, 0}, {1, 0, 1}};
         System.out.println(4 / 3);
         System.out.println(solution(key, lock));
-    }
-
-    static void print() {
-        //        int n = 4;
-        //        for(int row=0; row<n; row++){
-        //            System.out.println();
-        //            for(int column=0; column<n; column++){
-        //                System.out.print(result[row][column]+" ");
-        //            }
-        //        }
-        //        System.out.println("===================");
-        //    }
     }
 }

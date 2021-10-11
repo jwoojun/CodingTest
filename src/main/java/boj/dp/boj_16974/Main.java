@@ -16,7 +16,6 @@ public class Main {
         st = new StringTokenizer(br.readLine());
         n = Integer.parseInt(st.nextToken());
         x = Long.parseLong(st.nextToken());
-//        System.identityHashCode()
 
         h = new long[n + 1];
         p = new long[n + 1];
