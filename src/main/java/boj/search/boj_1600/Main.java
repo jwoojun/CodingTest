@@ -1,4 +1,4 @@
-package boj.impl.boj_1600;
+package boj.search.boj_1600;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -15,6 +15,7 @@ public class Main {
     static int[][] moves = {{-2, -1}, {-1,-2},{-2,1}, {-1,2}, {1, 2}, {2,1}, {1, -2}, {2,-1}};
     static int [] dx = {1,-1,0,0};
     static int [] dy = {0,0,1,-1};
+
     public static void main(String[] args) throws Exception {
         init();
         bfs(0,0);
@@ -44,21 +45,19 @@ public class Main {
                 System.out.println(monkey.moveCount);
                 System.exit(0);
             }
-
             for(int i=0; i<4; i++){
                 int next_x = monkey.x + dx[i];
                 int next_y = monkey.y + dy[i];
-                if(moveable_v1(next_x, next_y, monkey.jumpCount)){
+                if(moveable_monkey(next_x, next_y, monkey.jumpCount)){
                     visited[monkey.jumpCount][next_x][next_y] = true;
                     queue.add(new Monkey(next_x, next_y, monkey.moveCount+1, monkey.jumpCount));
                 }
             }
-
             if(monkey.jumpCount>0){
                 for (int[] move : moves) {
                     int next_x = monkey.x + move[0];
                     int next_y = monkey.y + move[1];
-                    if (moveable_v2(next_x, next_y, monkey.jumpCount)) {
+                    if (moveable_horse(next_x, next_y, monkey.jumpCount)) {
                         visited[monkey.jumpCount-1][next_x][next_y] = true;
                         queue.add(new Monkey(next_x, next_y, monkey.moveCount+1, monkey.jumpCount-1));
                     }
@@ -68,11 +67,11 @@ public class Main {
         System.out.println(-1);
     }
 
-    static boolean moveable_v1(int x, int y, int number) {
+    static boolean moveable_monkey(int x, int y, int number) {
         return x>=0 && x< h && y>=0 && y<w && board[x][y] ==0 && !visited[number][x][y];
     }
 
-    static boolean moveable_v2(int x, int y, int number) {
+    static boolean moveable_horse(int x, int y, int number) {
         return x>=0 && x< h && y>=0 && y<w && board[x][y] ==0 && !visited[number-1][x][y];
     }
 
@@ -99,6 +98,7 @@ public class Main {
             this.jumpCount = jumpCount;
         }
     }
+
     static void print(){
         for(int i=0; i<h; i++){
             System.out.println();

@@ -1,4 +1,4 @@
-package boj.impl.boj_1600;
+package boj.search.boj_1600;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
@@ -32,7 +32,6 @@ public class False {
         queue.add(new Monkey(h-1,w-1, 0, k));
         while(!queue.isEmpty()){
             Monkey monkey = queue.poll();
-//            print();
             int x = monkey.x;
             int y = monkey.y;
             if(x==0 && y==0){

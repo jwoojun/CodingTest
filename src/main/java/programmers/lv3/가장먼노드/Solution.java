@@ -1,25 +1,24 @@
 package programmers.lv3.가장먼노드;
 
+import jnr.ffi.annotations.In;
+
 import java.util.*;
 
 public class Solution {
     static Map<Integer, List<Integer>> map = new HashMap<>();
-    static int[][] board;
-
     public static int solution(int n, int[][] edge) {
-        board = new int[n][n];
-        for (int i = 0; i < n; i++) {
+        int answer = 0;
+        for(int i=0; i<n; i++){
             map.put(i, new ArrayList<>());
         }
-        for (int[] ints : edge) {
-            int nodeA = ints[0] - 1;
-            int nodeB = ints[1] - 1;
+        for(int i=0; i<edge.length; i++){
+            int nodeA = edge[i][0]-1;
+            int nodeB = edge[i][1]-1;
             map.get(nodeA).add(nodeB);
             map.get(nodeB).add(nodeA);
-            board[nodeA][nodeB] = 1;
-            board[nodeB][nodeA] = 1;
         }
-        return bfs(0, n);
+        answer = bfs(0, n);
+        return  answer;
     }
 
     static int bfs(int start, int n) {
@@ -52,16 +51,4 @@ public class Solution {
         System.out.println(solution(n, vertex));
     }
 
-    static class Point {
-        int no;
-        int x;
-        int y;
-
-        public Point(int no, int x, int y) {
-            this.no = no;
-            this.x = x;
-            this.y = y;
-        }
-
-    }
 }

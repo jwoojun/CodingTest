@@ -3,7 +3,7 @@ package boj.search.boj_14889;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.StringTokenizer;
-
+//https://regularmember.tistory.com/91?category=747444
 public class Main {
     static int n;
     static boolean [] selected;
