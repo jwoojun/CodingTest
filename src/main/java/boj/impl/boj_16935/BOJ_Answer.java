@@ -13,6 +13,7 @@ public class BOJ_Answer {
         }
         return ans;
     }
+
     static int[][] operation2(int[][] a) {
         int n = a.length;
         int m = a[0].length;

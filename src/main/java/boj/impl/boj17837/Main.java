@@ -283,16 +283,3 @@ public class Main {
 
     // 흠...
 }
-
-class Test {
-    public static void main(String[] args){
-        List<Integer> lst = new ArrayList<>();
-        lst.add(1);
-        lst.add(2);
-        lst.add(3);
-        Collections.reverse(lst);
-
-        lst.add(4);
-        lst.forEach(System.out::println);
-    }
-}
