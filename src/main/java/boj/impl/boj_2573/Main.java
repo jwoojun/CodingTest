@@ -1,4 +1,4 @@
-package boj.impl.boj2573;
+package boj.impl.boj_2573;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;

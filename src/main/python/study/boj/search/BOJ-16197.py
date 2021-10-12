@@ -31,13 +31,11 @@ def bfs(coin):
                 if board[next_x2][next_y2] == "#":
                     next_x2, next_y2 = x2, y2
                 coin.append([next_x1, next_y1, next_x2, next_y2, count + 1])
-
             elif 0 <= next_x1 < N and 0 <= next_y1 < M:
                 return count + 1
 
             elif 0 <= next_x2 < N and 0 <= next_y2 < M:
                 return count + 1
-
             else:
                 continue
     return -1

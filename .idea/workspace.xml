@@ -5,13 +5,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f172bc02-2a3b-4a6a-b510-abc43b1a0900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/가장먼노드/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_11058/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_1602/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_10026/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_11060/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_14889/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_16197/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/네트워크/Solution.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/네트워크/Solution2.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21608/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21608/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21608/Main$Shark.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21608/Main$Shark.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21608/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_21608/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/Common.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/Common.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj14502/Main$Point.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj14502/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj2573/Main$Input.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj2573/Main.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Practice$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Practice$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Practice$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Practice$Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Practice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_17822/Practice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_18428/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_18428/Main$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_18428/Main$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_18428/Main$Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_18428/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_18428/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2580/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2580/Main$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2580/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2580/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/가장먼노드/Solution$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/programmers/가장먼노드/Solution$Point.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/가장먼노드/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/programmers/가장먼노드/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/Common.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/Common.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Practice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj14502/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_14502/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj2573/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2573/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17822/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_17822/Practice.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_18428/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_18428/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2580/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2580/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/programmers/가장먼노드/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programmers/가장먼노드/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-16197.py" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-16197.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,12 +160,13 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="programmers.네트워크" />
       <recent name="boj.dp.boj_2294" />
       <recent name="programmers.행렬테두리회전" />
       <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Solution">
+  <component name="RunManager" selected="Application.Main (2)">
     <configuration name="Java" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -146,11 +177,24 @@
       </method>
     </configuration>
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_2294.Main" />
+      <option name="MAIN_CLASS_NAME" value="boj.search.boj_10026.Main" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.dp.boj_2294.*" />
+          <option name="PATTERN" value="boj.search.boj_10026.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.search.boj_16197.Main" />
+      <module name="algorithm.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boj.search.boj_16197.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -159,11 +203,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_17822.Main" />
+      <option name="MAIN_CLASS_NAME" value="boj.search.boj_14889.Main" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.impl.boj_17822.*" />
+          <option name="PATTERN" value="boj.search.boj_14889.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -171,12 +215,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_2294.Practice" />
+    <configuration name="Solution (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="programmers.네트워크.Solution" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.dp.boj_2294.*" />
+          <option name="PATTERN" value="programmers.네트워크.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,31 +228,27 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Practice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_17822.Practice" />
+    <configuration name="BOJ-14889" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="algorithm.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boj.impl.boj_17822.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programmers.가장먼노드.Solution" />
-      <module name="algorithm.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="programmers.가장먼노드.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/src/main/python/study/boj/search" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/src/main/python/study/boj/search/BOJ-14889.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
     </configuration>
     <configuration name="BOJ-15989" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="algorithm.main" />
@@ -258,19 +298,19 @@
       <item itemvalue="Application.Java" />
       <item itemvalue="Python.BOJ-15989" />
       <item itemvalue="Python.BOJ-2206" />
-      <item itemvalue="Application.Practice" />
+      <item itemvalue="Application.Main (3)" />
+      <item itemvalue="Python.BOJ-14889" />
       <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Solution (1)" />
       <item itemvalue="Application.Main (2)" />
-      <item itemvalue="Application.Practice (1)" />
-      <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.Practice (1)" />
         <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Solution (1)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Practice" />
+        <item itemvalue="Python.BOJ-14889" />
+        <item itemvalue="Application.Main (3)" />
       </list>
     </recent_temporary>
   </component>
@@ -507,7 +547,9 @@
       <workItem from="1633643608454" duration="33123000" />
       <workItem from="1633752322057" duration="3570000" />
       <workItem from="1633763355422" duration="48724000" />
-      <workItem from="1633915189003" duration="27518000" />
+      <workItem from="1633915189003" duration="28491000" />
+      <workItem from="1633958874117" duration="3146000" />
+      <workItem from="1633973109892" duration="17757000" />
     </task>
     <servers />
   </component>
@@ -572,8 +614,8 @@
     <SUITE FILE_PATH="coverage/algorithm$BOJ_1743.coverage" NAME="BOJ-1743 Coverage Results" MODIFIED="1625947060013" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj/2021.05.29" />
     <SUITE FILE_PATH="coverage/algorithm$BOJ_16948.coverage" NAME="BOJ-16948 Coverage Results" MODIFIED="1633895241634" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study" />
     <SUITE FILE_PATH="coverage/algorithm$___.coverage" NAME="특정 거리의 도시 찾기 Coverage Results" MODIFIED="1626665105595" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/book/Hanbit/search" />
-    <SUITE FILE_PATH="coverage/algorithm$BOJ_14889.coverage" NAME="BOJ-14889 Coverage Results" MODIFIED="1626025279870" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj/search" />
     <SUITE FILE_PATH="coverage/algorithm$.coverage" NAME="올리브영 Coverage Results" MODIFIED="1629001963018" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj" />
+    <SUITE FILE_PATH="coverage/algorithm$BOJ_14889.coverage" NAME="BOJ-14889 Coverage Results" MODIFIED="1634017179105" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj/search" />
     <SUITE FILE_PATH="coverage/algorithm$BOJ_1062.coverage" NAME="BOJ-1062 Coverage Results" MODIFIED="1626511828177" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/src/main/python/study/boj/search" />
   </component>
 </project>

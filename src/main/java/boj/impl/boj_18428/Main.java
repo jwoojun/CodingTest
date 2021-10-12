@@ -9,14 +9,33 @@ import java.util.StringTokenizer;
 public class Main {
     static int n;
     static Point[][] board;
-    static List<Point> blocks = new ArrayList<>();
+
     static List<Point> teachers = new ArrayList<>();
+
     static boolean [][] visited ;
     public static void main(String[] args) throws Exception {
         n = input.integer();
         board = new Point[n][n];
         visited = new boolean[n][n];
+        init();
+        int blockCount = 0;
+        for(int row=0; row<n; row++){
+            for(int col=0; col<n; col++){
+                if(!visited[row][col] && blockCount<3){
+                    visited[row][col] = true;
+                    board[row][col].block = true;
+                    blockCount+=1;
+                    dfs(blockCount);
+                    board[row][col].block = false;
+                    blockCount--;
+                    visited[row][col] = false;
+                }
+            }
+        }
+        System.out.println("NO");
+    }
 
+    static void init() throws Exception {
         for(int row=0; row<n; row++){
             for(int col=0; col<n; col++){
                 String s = input.next();
@@ -29,30 +48,20 @@ public class Main {
                     visited[row][col] = true;
                 }else if(s.equals("X")){
                     board[row][col] = new Point(row, col, s, false);
-                    blocks.add(new Point(row, col, s, false));
                 }
             }
         }
-
-        int blockCount = 0;
-        for(int row=0; row<n; row++){
-            for(int col=0; col<n; col++){
-                if(!visited[row][col] && blockCount<3){
-                    visited[row][col] = true;
-                    board[row][col].block = true;
-                    blockCount+=1;
-                    dfs(blockCount);
-                    board[row][col].block = false;
-                    visited[row][col] = false;
-                    blockCount--;
-                }
-            }
-        }
-        System.out.println("NO");
     }
 
     private static void dfs(int count) {
-        if(count<3){
+        if (count == 3) {
+            if (possible()) {
+                System.out.println("YES");
+                System.exit(0);
+            }
+        }
+
+        else if(count<3){
             for(int row=0; row<n; row++){
                 for(int col=0; col<n; col++){
                     if(!visited[row][col]){
@@ -65,36 +74,8 @@ public class Main {
                 }
             }
         }
-        else if (count == 3) {
-            if (possible()) {
-                System.out.println("YES");
-                System.exit(0);
-            }
-        }
     }
 
-    static void print(){
-        for(int row=0; row<n; row++){
-            System.out.println();
-            for(int col=0; col<n; col++){
-                System.out.print(visited[row][col]+" ");
-            }
-        }
-    }
-
-    static void print2(){
-        for(int row=0; row<n; row++){
-            System.out.println();
-            for(int col=0; col<n; col++){
-                System.out.print(board[row][col]+" ");
-            }
-        }
-    }
-
-    /**
-     *  학생을 발견하게 되면 false를 반환.
-     *  즉, 끝까지 발견하지 못 했다는 것은(true) 이 배치가 가능하다는 말.
-     * */
     static boolean possible(){
         for (Point teacher : teachers) {
             for (int dir = 0; dir < 4; dir++) {
@@ -170,3 +151,4 @@ public class Main {
         }
     }
 }
+

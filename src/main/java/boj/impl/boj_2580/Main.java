@@ -52,7 +52,6 @@ public class Main {
                 }
             }
         }
-
     }
 
     static boolean check(int x, int y, int value){

@@ -124,14 +124,17 @@ public class Practice {
             for(int i=0; i<4; i++){
                 int next_x = point.x + dy[i];
                 int next_y = point.y + dx[i];
+
                 if(next_y>m-1){
                     next_y = 0;
                 }else if(next_y<0){
                     next_y = m-1;
                 }
+
                 if(next_x<0 || next_x>n-1 || visited[next_x][next_y]==-1){
                     continue;
                 }
+
                 if(board[next_x][next_y] == number){
                     visited[next_x][next_y] = -1;
                     Point newPoint = new Point(next_x, next_y);
