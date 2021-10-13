@@ -42,7 +42,7 @@ public class BOJ_1275 {
                 x = temp;
             }
 
-            sb.append(sum(1, N, 1, x, y) + "\n");
+            sb.append(sum(1, N, 1, x, y)).append("\n");
             update(1, N, 1, a, b);
         }
 

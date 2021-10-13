@@ -6,13 +6,32 @@ import java.util.*;
 
 public class Main {
     static int n, m, a, b;
-    // 북 동 남 서
+
     static int[] dx = {0, 1, 0, -1};
     static int[] dy = {-1, 0, 1, 0};
+
+
     static int[][] board;
     static HashMap<String,Integer> directionMap = new HashMap<>();
     static Map<Integer, Robot> robots = new HashMap<>();
     public static void main(String[] args) throws Exception {
+        init();
+        for (int i = 0; i < m; i++) {
+            int robotNo = input.integer();
+            String command = input.next();
+            int count = input.integer();
+            for (int j = 0; j < count; j++) {
+                String result = command(robotNo-1, command);
+                if(!result.equals("OK\n")){
+                    System.out.println(result);
+                    return;
+                }
+            }
+        }
+        System.out.println("OK");
+    }
+
+    private static void init() throws Exception {
         directionMap.put("N", 0);
         directionMap.put("E", 1);
         directionMap.put("S", 2);
@@ -36,22 +55,8 @@ public class Main {
             String direction = input.next();
             robots.put(i, new Robot(b-y, x-1, i, directionMap.get(direction)));
             board[b-y][x-1] = i;
-            print();
         }
 
-        for (int i = 0; i < m; i++) {
-            int robotNo = input.integer();
-            String command = input.next();
-            int count = input.integer();
-            for (int j = 0; j < count; j++) {
-                String result = start(robotNo-1, command);
-                if(!result.equals("OK\n")){
-                    System.out.println(result);
-                    return;
-                }
-            }
-        }
-        System.out.println("OK");
     }
 
     static void print() {
@@ -63,8 +68,7 @@ public class Main {
         }
     }
 
-
-    static String start(int robotNo, String command){
+    static String command(int robotNo, String command){
         if(command.equals("L")){
             robots.get(robotNo).turnLeft();
             return "OK\n";
@@ -81,14 +85,16 @@ public class Main {
     }
 
     static Input input = new Input();
+
+
     static class Robot {
-        int x, y, id;
+        int x, y, no;
         int direction;
 
-        public Robot(int x, int y, int id, int direction) {
+        public Robot(int x, int y, int no, int direction) {
             this.x = x;
             this.y = y;
-            this.id = id;
+            this.no = no;
             this.direction = direction;
         }
 
@@ -96,7 +102,6 @@ public class Main {
             this.direction -= 1;
             if(this.direction == -1){
                 this.direction = 3;
-                System.out.println("왼쪽= "+direction);
             }
         }
 
@@ -104,32 +109,20 @@ public class Main {
             this.direction += 1;
             if(this.direction == 4){
                 this.direction = 0;
-                System.out.println("오른쪽= "+direction);
             }
-        }
-
-        @Override
-        public String toString() {
-            return "Robot{" +
-                    "x=" + x +
-                    ", y=" + y +
-                    ", kind=" + id +
-                    ", directionNumber=" + direction +
-                    '}';
         }
 
         public String move() {
-            System.out.println("F= ");
-            int next_x = x + dx[this.direction];
-            int next_y = y + dy[this.direction];
+            int next_x = x + dy[this.direction];
+            int next_y = y + dx[this.direction];
             if(!isPossible(next_x, next_y)){
-                return "Rotob " + (this.id+1) +" crashes into the wall\n";
+                return "Robot "+(this.no +1)+" crashes into the wall\n";
             }
             if(board[next_x][next_y]!=-1){
-                return "Robot " + (this.id+1) + " crashes into robot "+(board[next_x][next_y]+1)+"\n";
+                return "Robot "+(this.no +1)+" crashes into robot "+(board[next_x][next_y]+1)+"\n";
             }
-            board[this.x][this.y] = 0;
-            board[next_x][next_y] = this.id;
+            board[this.x][this.y] = -1;
+            board[next_x][next_y] = this.no;
             this.x = next_x;
             this.y = next_y;
             return "OK\n";

@@ -5,19 +5,26 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f172bc02-2a3b-4a6a-b510-abc43b1a0900" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_1182/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1463/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_15989/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1965/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_16198/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2174/Practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fastcampus/boj_1012/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.s" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_1600/False$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_1600/False$Monkey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_1600/False.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_1600/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_1600/Main$Monkey.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_1600/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/lv3/가장먼노드/Solution$Point.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/lv3/가장먼노드/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/programmers/lv3/가장먼노드/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_1600/False.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_1600/False.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_1600/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_1600/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/search/boj_14889/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_14889/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programmers/lv3/가장먼노드/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programmers/lv3/가장먼노드/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/BOJ_1275.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/BOJ_1275.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2174/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2174/Main$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2174/Main$Robot.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2174/Main$Robot.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2174/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_2174/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/common/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/BOJ_1275.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/BOJ_1275.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2174/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_2174/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -54,6 +61,7 @@
       <list>
         <option value="JUnit5 Test Class" />
         <option value="Python Script" />
+        <option value="package-info" />
         <option value="Class" />
       </list>
     </option>
@@ -145,32 +153,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Application.Main (1)">
-    <configuration name="Example" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.impl.boj17837.Example" />
-      <module name="algorithm.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boj.impl.boj17837.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="False" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.search.boj_1600.False" />
-      <module name="algorithm.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boj.search.boj_1600.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="Java" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -180,12 +162,38 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.search.boj_10026.Main" />
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_1965.Main" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.search.boj_10026.*" />
+          <option name="PATTERN" value="boj.dp.boj_1965.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_16198.Main" />
+      <module name="algorithm.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boj.impl.boj_16198.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Main (5)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_2174.Main" />
+      <module name="algorithm.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="boj.impl.boj_2174.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -194,11 +202,11 @@
       </method>
     </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.search.boj_1600.Main" />
+      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_1463.Main" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.search.boj_1600.*" />
+          <option name="PATTERN" value="boj.dp.boj_1463.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -206,12 +214,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programmers.lv3.가장먼노드.Solution" />
+    <configuration name="Practice" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_2174.Practice" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="programmers.lv3.가장먼노드.*" />
+          <option name="PATTERN" value="boj.impl.boj_2174.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -265,21 +273,21 @@
     </configuration>
     <list>
       <item itemvalue="Application.Java" />
-      <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (4)" />
+      <item itemvalue="Application.Main (5)" />
+      <item itemvalue="Application.Practice" />
       <item itemvalue="Python.BOJ-15989" />
       <item itemvalue="Python.BOJ-2206" />
-      <item itemvalue="Application.False" />
-      <item itemvalue="Application.Example" />
       <item itemvalue="Application.Main (1)" />
-      <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main (1)" />
-        <item itemvalue="Application.Solution" />
-        <item itemvalue="Application.Example" />
-        <item itemvalue="Application.False" />
-        <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Practice" />
+        <item itemvalue="Application.Main (5)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Main (4)" />
       </list>
     </recent_temporary>
   </component>
@@ -520,7 +528,8 @@
       <workItem from="1633958874117" duration="3146000" />
       <workItem from="1633973109892" duration="19029000" />
       <workItem from="1634030992430" duration="3115000" />
-      <workItem from="1634037657529" duration="17130000" />
+      <workItem from="1634037657529" duration="43060000" />
+      <workItem from="1634125370581" duration="1362000" />
     </task>
     <servers />
   </component>

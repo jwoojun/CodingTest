@@ -15,4 +15,13 @@ class Main{
             return Integer.parseInt(st.nextToken());
         }
     }
+
+    static void print() {
+        for(int row=0; row<m; row++){
+            System.out.println();
+            for(int col=0; col<n; col++){
+                System.out.print(visited[row][col]+" ");
+            }
+        }
+    }
 }
