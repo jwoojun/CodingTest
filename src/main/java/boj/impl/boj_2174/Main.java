@@ -6,16 +6,18 @@ import java.util.*;
 
 public class Main {
     static int n, m, a, b;
-
     static int[] dx = {0, 1, 0, -1};
     static int[] dy = {-1, 0, 1, 0};
-
-
     static int[][] board;
     static HashMap<String,Integer> directionMap = new HashMap<>();
     static Map<Integer, Robot> robots = new HashMap<>();
+
     public static void main(String[] args) throws Exception {
         init();
+        bfs();
+    }
+
+    private static void bfs() throws Exception {
         for (int i = 0; i < m; i++) {
             int robotNo = input.integer();
             String command = input.next();
@@ -80,7 +82,7 @@ public class Main {
         }
     }
 
-    static boolean isPossible(int x, int y) {
+    static boolean moveable(int x, int y) {
         return x >= 0 && x < b && y >= 0 && y < a;
     }
 
@@ -115,7 +117,7 @@ public class Main {
         public String move() {
             int next_x = x + dy[this.direction];
             int next_y = y + dx[this.direction];
-            if(!isPossible(next_x, next_y)){
+            if(!moveable(next_x, next_y)){
                 return "Robot "+(this.no +1)+" crashes into the wall\n";
             }
             if(board[next_x][next_y]!=-1){
