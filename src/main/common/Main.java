@@ -14,6 +14,15 @@ class Main{
             if(!st.hasMoreElements()) st = new StringTokenizer(br.readLine());
             return Integer.parseInt(st.nextToken());
         }
+        public String next() throws Exception{
+            if(!st.hasMoreElements()) st = new StringTokenizer(br.readLine());
+            return st.nextToken();
+        }
+        public char[] nToCharArray() throws Exception{
+            if(!st.hasMoreElements()) st = new StringTokenizer(br.readLine());
+            return st.nextToken().toCharArray();
+        }
+
     }
 
     static void print() {
