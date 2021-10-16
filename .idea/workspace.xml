@@ -5,38 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f172bc02-2a3b-4a6a-b510-abc43b1a0900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1463/DP.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1463/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1463/SearchBFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1463/SearchDFS.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1965/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2167/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_12904/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_12904/Rotate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_12904/Test.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fastcampus/boj_1074/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/lv3/가장먼노드/Solution2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1965/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1965/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1965/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1965/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2167/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2167/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2167/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2167/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Practice$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Practice$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Practice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Practice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_1062/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_1062/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_1062/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_1062/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main$Monkey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main$Monkey.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/lv3/가장먼노드/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/programmers/lv3/가장먼노드/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/lv3/네트워크/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/programmers/lv3/네트워크/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/common/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1965/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1965/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Practice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -89,6 +58,9 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="cd7cbfea-8cac-4119-8814-f9e072214649" />
+  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -130,7 +102,7 @@
     <property name="project.structure.side.proportion" value="0.375" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -286,13 +258,13 @@
     </configuration>
     <list>
       <item itemvalue="Application.Java" />
-      <item itemvalue="Python.BOJ-15989" />
-      <item itemvalue="Python.BOJ-2206" />
       <item itemvalue="Application.Practice (1)" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Practice (2)" />
+      <item itemvalue="Python.BOJ-15989" />
+      <item itemvalue="Python.BOJ-2206" />
     </list>
     <recent_temporary>
       <list>
@@ -545,6 +517,7 @@
       <workItem from="1634125370581" duration="1362000" />
       <workItem from="1634136429025" duration="21198000" />
       <workItem from="1634239757852" duration="55433000" />
+      <workItem from="1634390448864" duration="225000" />
     </task>
     <servers />
   </component>
