@@ -5,10 +5,38 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f172bc02-2a3b-4a6a-b510-abc43b1a0900" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1463/DP.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1463/Practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1463/SearchBFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1463/SearchDFS.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1965/Practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2167/Practice.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_12904/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_12904/Rotate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_12904/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/fastcampus/boj_1074/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/lv3/가장먼노드/Solution2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/search/boj_1600/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_1600/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programmers/lv3/가장먼노드/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programmers/lv3/가장먼노드/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programmers/lv3/네트워크/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programmers/lv3/네트워크/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1965/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1965/Main$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1965/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1965/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2167/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2167/Main$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2167/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2167/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Practice$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Practice$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Practice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Practice.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_1062/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_1062/Main$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_1062/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/graph/boj_1062/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main$Monkey.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main$Monkey.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_1600/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/lv3/가장먼노드/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/programmers/lv3/가장먼노드/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/lv3/네트워크/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/programmers/lv3/네트워크/Solution.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/common/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1965/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1965/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Practice.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,27 +158,14 @@
       <recent name="" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="boj.dp.boj_2167" />
+      <recent name="boj.dp.boj_1965" />
+      <recent name="boj.dp.boj_1463" />
       <recent name="boj.graph.boj_1062" />
       <recent name="programmers.네트워크" />
-      <recent name="boj.dp.boj_2294" />
-      <recent name="programmers.행렬테두리회전" />
-      <recent name="" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.False">
-    <configuration name="False" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.graph.boj_1062.False" />
-      <module name="algorithm.main" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="boj.graph.boj_1062.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.Practice (2)">
     <configuration name="Java" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -160,12 +175,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Main (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="fastcampus.boj_1074.Main" />
+      <module name="algorithm.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="fastcampus.boj_1074.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_11053.Main" />
+      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_2294.Main" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.dp.boj_11053.*" />
+          <option name="PATTERN" value="boj.dp.boj_2294.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -173,12 +201,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (3)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.two_pointer.Main" />
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_1965.Main" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.two_pointer.*" />
+          <option name="PATTERN" value="boj.dp.boj_1965.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -186,12 +214,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main (4)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_2167.Main" />
+    <configuration name="Practice (1)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_1965.Practice" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="boj.dp.boj_2167.*" />
+          <option name="PATTERN" value="boj.dp.boj_1965.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -199,12 +227,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Segment" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="data_structure.segmenttree.Segment" />
+    <configuration name="Practice (2)" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.dp.boj_2294.Practice" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="data_structure.segmenttree.*" />
+          <option name="PATTERN" value="boj.dp.boj_2294.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -260,19 +288,19 @@
       <item itemvalue="Application.Java" />
       <item itemvalue="Python.BOJ-15989" />
       <item itemvalue="Python.BOJ-2206" />
+      <item itemvalue="Application.Practice (1)" />
+      <item itemvalue="Application.Main" />
+      <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
-      <item itemvalue="Application.Segment" />
-      <item itemvalue="Application.Main (4)" />
-      <item itemvalue="Application.Main (3)" />
-      <item itemvalue="Application.False" />
+      <item itemvalue="Application.Practice (2)" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.False" />
-        <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Main (4)" />
-        <item itemvalue="Application.Segment" />
+        <item itemvalue="Application.Practice (2)" />
         <item itemvalue="Application.Main (2)" />
+        <item itemvalue="Application.Main (1)" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Practice (1)" />
       </list>
     </recent_temporary>
   </component>
@@ -516,7 +544,7 @@
       <workItem from="1634037657529" duration="43060000" />
       <workItem from="1634125370581" duration="1362000" />
       <workItem from="1634136429025" duration="21198000" />
-      <workItem from="1634239757852" duration="32892000" />
+      <workItem from="1634239757852" duration="55433000" />
     </task>
     <servers />
   </component>

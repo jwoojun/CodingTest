@@ -1,37 +1,22 @@
-package boj.dp.boj_2294;
+package boj.dp.boj_1463;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Practice {
     static int n;
-    static int k;
-    static int[] coins;
     static int[] dp;
     public static void main(String[] args) throws Exception {
-        init();
-        for(int coin : coins){
-            for(int j = coin; j<k+1; j++){
-                dp[j] = Math.min(dp[j], dp[j-coin]+1);
-            }
-        }
-        System.out.println(dp[k]==10000001 ? -1 : dp[k]);
-    }
-
-    private static void init() throws Exception {
         n = input.integer();
-        k = input.integer();
-        coins = new int[n];
-        dp = new int[k+1];
-
-        for(int i=0; i<n; i++){
-            int number = input.integer();
-            coins[i] = number;
+        dp = new int[n+1];
+        dp[1] = 0;
+        for(int i=2; i<n+1; i++){
+            dp[i] = dp[i-1]+1;
+            if(n%2==0) dp[i] = Math.min(dp[i], dp[i/2]+1);
+            if(n%3==0) dp[i] = Math.min(dp[i], dp[i/3]+1);
         }
-        Arrays.fill(dp, 10000001);
-        dp[0] = 0;
+        System.out.println(dp[n]);
     }
 
     static Input input = new Input();
@@ -44,5 +29,3 @@ public class Practice {
         }
     }
 }
-
-

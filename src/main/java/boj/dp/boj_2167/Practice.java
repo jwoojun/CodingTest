@@ -1,37 +1,46 @@
-package boj.dp.boj_2294;
+package boj.dp.boj_2167;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
-import java.util.Arrays;
 import java.util.StringTokenizer;
 
 public class Practice {
-    static int n;
-    static int k;
-    static int[] coins;
-    static int[] dp;
+    static int n, m, k;
+    static int[][] board;
+    static int[][] dp;
     public static void main(String[] args) throws Exception {
         init();
-        for(int coin : coins){
-            for(int j = coin; j<k+1; j++){
-                dp[j] = Math.min(dp[j], dp[j-coin]+1);
-            }
-        }
-        System.out.println(dp[k]==10000001 ? -1 : dp[k]);
+        answer();
     }
+
+    private static void answer() throws Exception {
+
+    }
+
 
     private static void init() throws Exception {
         n = input.integer();
-        k = input.integer();
-        coins = new int[n];
-        dp = new int[k+1];
-
-        for(int i=0; i<n; i++){
-            int number = input.integer();
-            coins[i] = number;
+        m = input.integer();
+        board = new int[n+1][m+1];
+        dp = new int[n+1][m+1];
+        for(int row=1; row<n+1; row++){
+            for(int col=1; col<m+1; col++){
+                board[row][col] = input.integer();
+            }
         }
-        Arrays.fill(dp, 10000001);
-        dp[0] = 0;
+
+        k = input.integer();
+
+
+    }
+
+    static void print() {
+        for(int row=0; row<n+1; row++){
+            System.out.println();
+            for(int col=0; col<m+1; col++){
+                System.out.print(dp[row][col]+" ");
+            }
+        }
     }
 
     static Input input = new Input();
@@ -44,5 +53,3 @@ public class Practice {
         }
     }
 }
-
-

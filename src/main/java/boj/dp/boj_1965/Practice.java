@@ -1,5 +1,4 @@
-package boj.dp.boj_2294;
-
+package boj.dp.boj_1965;
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.Arrays;
@@ -7,31 +6,32 @@ import java.util.StringTokenizer;
 
 public class Practice {
     static int n;
-    static int k;
-    static int[] coins;
+    static int[] numbers;
     static int[] dp;
     public static void main(String[] args) throws Exception {
         init();
-        for(int coin : coins){
-            for(int j = coin; j<k+1; j++){
-                dp[j] = Math.min(dp[j], dp[j-coin]+1);
+        for(int i=1; i<n+1; i++){
+            dp[i] = 1;
+            for(int j=1; j<i; j++){
+                if(numbers[j]<numbers[i] && dp[j]<dp[i]+1){
+                    dp[i] = Math.max(dp[i], dp[j]+1);
+                }
             }
         }
-        System.out.println(dp[k]==10000001 ? -1 : dp[k]);
+        System.out.println(getMax());
     }
 
-    private static void init() throws Exception {
+    static void init() throws Exception {
         n = input.integer();
-        k = input.integer();
-        coins = new int[n];
-        dp = new int[k+1];
-
+        numbers = new int[n+1];
+        dp = new int[n+1];
         for(int i=0; i<n; i++){
-            int number = input.integer();
-            coins[i] = number;
+            numbers[i+1] = input.integer();
         }
-        Arrays.fill(dp, 10000001);
-        dp[0] = 0;
+    }
+
+    static int getMax(){
+        return Arrays.stream(dp).max().orElseThrow();
     }
 
     static Input input = new Input();
@@ -44,5 +44,3 @@ public class Practice {
         }
     }
 }
-
-

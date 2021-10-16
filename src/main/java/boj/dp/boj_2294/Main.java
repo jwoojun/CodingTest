@@ -9,19 +9,23 @@ public class Main {
     static int n;
     static int k;
     static int[] coins;
-    static int[] memoi;
+    static int[] dp;
+    static StringBuilder sb = new StringBuilder();
     public static void main(String[] args) throws Exception {
         n = input.integer();
         k = input.integer();
         coins = new int[n];
-        memoi = new int[k+1];
+        dp = new int[k+1];
         init();
+
         for(int i=0; i<n; i++){
             for(int j=coins[i]; j<k+1; j++){
-                memoi[j] = Math.min(memoi[j], memoi[j-coins[i]]+1);
+                System.out.println(j+", "+coins[i]);
+                dp[j] = Math.min(dp[j], dp[j-coins[i]]+1);
+                System.out.println("(i, j)=("+i+", "+j+"), dp[i]="+dp[i]+", dp[j]="+dp[j]);
             }
         }
-        System.out.println(memoi[k]== Integer.MAX_VALUE? -1 : memoi[k]);
+        System.out.println(dp[k]== Integer.MAX_VALUE? -1 : dp[k]);
     }
 
     static void init() throws Exception {
@@ -29,8 +33,8 @@ public class Main {
             int value = input.integer();
             coins[number] = value;
         }
-        Arrays.fill(memoi, Integer.MAX_VALUE);
-        memoi[0] = 0;
+        Arrays.fill(dp, Integer.MAX_VALUE);
+        dp[0] = 0;
     }
 
 
