@@ -14,7 +14,6 @@ public class Solution {
             if(!visited[i]){
                 visited[i] = true;
                 dfs(i);
-                // System.out.println(visited[0]+" "+visited[1]+" "+visited[2]);
                 answer++;
             }
         }

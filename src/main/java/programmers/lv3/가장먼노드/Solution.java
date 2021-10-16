@@ -1,19 +1,18 @@
 package programmers.lv3.가장먼노드;
 
-import jnr.ffi.annotations.In;
-
 import java.util.*;
 
 public class Solution {
     static Map<Integer, List<Integer>> map = new HashMap<>();
+    static Deque<Integer> temp = new LinkedList<>();
     public static int solution(int n, int[][] edge) {
         int answer = 0;
         for(int i=0; i<n; i++){
             map.put(i, new ArrayList<>());
         }
-        for(int i=0; i<edge.length; i++){
-            int nodeA = edge[i][0]-1;
-            int nodeB = edge[i][1]-1;
+        for (int[] ints : edge) {
+            int nodeA = ints[0] - 1;
+            int nodeB = ints[1] - 1;
             map.get(nodeA).add(nodeB);
             map.get(nodeB).add(nodeA);
         }
@@ -28,7 +27,6 @@ public class Solution {
         deque.add(start);
         visited[start] = true;
         while (true) {
-            Deque<Integer> temp = new LinkedList<>();
             while (!deque.isEmpty()) {
                 int value = deque.poll();
                 for (int node : map.get(value)) {
@@ -41,6 +39,7 @@ public class Solution {
             if (temp.isEmpty()) break;
             result = temp.size();
             deque.addAll(temp);
+            temp.clear();
         }
         return result;
     }

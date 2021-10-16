@@ -12,7 +12,7 @@ public class Main {
     static int h;
     static int[][] board;
     static boolean[][][] visited;
-    static int[][] moves = {{-2, -1}, {-1,-2},{-2,1}, {-1,2}, {1, 2}, {2,1}, {1, -2}, {2,-1}};
+    static int[][] moves = {{-2, -1}, {-1,-2}, {-2,1}, {-1,2}, {1, 2}, {2,1}, {1, -2}, {2,-1}};
     static int [] dx = {1,-1,0,0};
     static int [] dy = {0,0,1,-1};
 
@@ -48,7 +48,7 @@ public class Main {
             for(int i=0; i<4; i++){
                 int next_x = monkey.x + dx[i];
                 int next_y = monkey.y + dy[i];
-                if(moveable_monkey(next_x, next_y, monkey.jumpCount)){
+                if(moveable(next_x, next_y, monkey.jumpCount)){
                     visited[monkey.jumpCount][next_x][next_y] = true;
                     queue.add(new Monkey(next_x, next_y, monkey.moveCount+1, monkey.jumpCount));
                 }
@@ -57,7 +57,7 @@ public class Main {
                 for (int[] move : moves) {
                     int next_x = monkey.x + move[0];
                     int next_y = monkey.y + move[1];
-                    if (moveable_horse(next_x, next_y, monkey.jumpCount)) {
+                    if (moveable(next_x, next_y, monkey.jumpCount-1)) {
                         visited[monkey.jumpCount-1][next_x][next_y] = true;
                         queue.add(new Monkey(next_x, next_y, monkey.moveCount+1, monkey.jumpCount-1));
                     }
@@ -67,12 +67,8 @@ public class Main {
         System.out.println(-1);
     }
 
-    static boolean moveable_monkey(int x, int y, int number) {
+    static boolean moveable(int x, int y, int number) {
         return x>=0 && x< h && y>=0 && y<w && board[x][y] ==0 && !visited[number][x][y];
-    }
-
-    static boolean moveable_horse(int x, int y, int number) {
-        return x>=0 && x< h && y>=0 && y<w && board[x][y] ==0 && !visited[number-1][x][y];
     }
 
     static Input input = new Input();
@@ -97,16 +93,5 @@ public class Main {
             this.moveCount = index;
             this.jumpCount = jumpCount;
         }
-    }
-
-    static void print(){
-        for(int i=0; i<h; i++){
-            System.out.println();
-            for(int j=0; j<w; j++){
-                System.out.print(visited[i][j]+" ");
-            }
-        }
-        System.out.println();
-        System.out.println("=======================");
     }
 }
