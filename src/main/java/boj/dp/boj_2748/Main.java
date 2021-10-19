@@ -13,7 +13,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         n = input.integer();
         init();
-        System.out.println(calculateFibo(n));
+        System.out.println(calculateFibo(n%1000000007));
     }
 
     static void init() {

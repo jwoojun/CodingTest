@@ -12,9 +12,16 @@ public class Practice {
     static int[] dx = {1, -1, 0, 0};
     static int [] dy = {0, 0, 1, -1};
     static int groupNo = 2;
-    static HashMap<Integer, Integer> map = new HashMap<>();
-
+    static HashMap<Integer, Integer> groupMap = new HashMap<>();
+    static StringBuilder sb = new StringBuilder();
     public static void main(String[] args) throws Exception {
+        init();
+        makeGroup();
+        plusValue();
+        System.out.println(sb);
+    }
+
+    private static void init() throws Exception {
         n = input.integer();
         m = input.integer();
         board = new int[n][m];
@@ -25,74 +32,81 @@ public class Practice {
                 board[row][col] = temp[col] - '0';
             }
         }
-
-        makeGroup();
-        plusValue();
-
     }
 
     static void plusValue() {
-        StringBuilder sb = new StringBuilder();
-        for (int row = 0; row < n; row++) {
-            for (int col = 0; col < m; col++) {
-                if (board[row][col] == 1) {
+        for(int row=0; row<n; row++){
+            for(int col=0; col<m; col++){
+                if(isWall(row, col)){
                     int result = 1;
                     Set<Integer> set = new HashSet<>();
-                    for (int i = 0; i < 4; i++) {
-                        int next_x = row + dx[i];
-                        int next_y = col + dy[i];
-                        if (isPossible(next_x, next_y) && board[next_x][next_y] > 1
-                                && !set.contains(board[next_x][next_y])) {
+                    for(int dir=0; dir<4; dir++){
+                        int next_x = row + dx[dir];
+                        int next_y = col + dy[dir];
+                        if(moveable(next_x, next_y) && hasGroup(next_x, next_y)
+                                && !containsGroupNo(set, next_x, next_y)){
                             set.add(board[next_x][next_y]);
-                            result += map.get(board[next_x][next_y]);
+                            result+=groupMap.get(board[next_x][next_y]);
                         }
                     }
-                    sb.append(result % 10);
+                    sb.append(result%10);
                 } else {
                     sb.append(0);
                 }
             }
-            sb.append('\n');
+            sb.append("\n");
         }
-        System.out.println(sb);
     }
 
     static void makeGroup(){
-        for (int row = 0; row < n; row++) {
-            for (int col = 0; col < m; col++) {
-                if (board[row][col] == 0) {
+        for(int row=0; row<n; row++){
+            for(int col=0; col<m; col++){
+                if(isBlank(row, col)){
                     bfs(row, col);
                 }
             }
         }
     }
 
-
     static void bfs(int x, int y){
         Queue<Point> queue = new LinkedList<>();
         queue.add(new Point(x, y));
-        int groupCount = 0;
         board[x][y] = groupNo;
+        int groupCount = 1;
         while(!queue.isEmpty()){
             Point point = queue.poll();
-            groupCount++;
-            for(int i=0; i<4; i++){
-                int next_x = point.x+dx[i];
-                int next_y = point.y + dy[i];
-                if(isPossible(next_x, next_y) && board[next_x][next_y] == 0){
+            for(int dir=0; dir<4; dir++){
+                int next_x = point.x + dx[dir];
+                int next_y = point.y + dy[dir];
+                if(moveable(next_x, next_y) && isBlank(next_x, next_y)){
                     board[next_x][next_y] = groupNo;
+                    groupCount++;
                     queue.add(new Point(next_x, next_y));
                 }
             }
         }
-        map.put(groupNo, groupCount);
+        groupMap.put(groupNo, groupCount);
         groupNo++;
     }
 
-
-
-    static boolean isPossible(int x, int y){
+    static boolean moveable(int x, int y){
         return x>=0 && x<n && y>=0 && y<m;
+    }
+
+    static boolean isBlank(int x, int y){
+        return board[x][y] == 0;
+    }
+
+    static boolean isWall(int x, int y){
+        return board[x][y] == 1;
+    }
+
+    static boolean hasGroup(int x, int y){
+        return board[x][y] > 1;
+    }
+
+    static boolean containsGroupNo(Set<Integer> set, int x, int y){
+        return set.contains(board[x][y]);
     }
 
     static class Point{

@@ -19,13 +19,10 @@ public class Main {
         for(int i=0; i<n; i++){
             dp[i] = 1;
             for(int j=0; j<i; j++){
-                if(numbers[i]<numbers[j] && dp[i]<dp[j]+1){
+                if(numbers[j]<numbers[i] && dp[i]<dp[j]+1){
                     dp[i] = dp[j]+1;
-                    print();
                 }
             }
-            System.out.println();
-            System.out.println("=======================");
         }
         System.out.println(Arrays.stream(dp).max().orElseThrow());
     }

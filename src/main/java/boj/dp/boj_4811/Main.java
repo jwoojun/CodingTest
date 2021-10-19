@@ -25,7 +25,6 @@ public class Main {
                     }
                 }
             }
-
             long sum = 0;
             for(int h = 0; h<=2*n; h++){
                 for(int w=0; w<=n ; w++){

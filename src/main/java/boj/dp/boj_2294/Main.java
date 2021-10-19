@@ -20,9 +20,9 @@ public class Main {
 
         for(int i=0; i<n; i++){
             for(int j=coins[i]; j<k+1; j++){
-                System.out.println(j+", "+coins[i]);
+//                System.out.println(j+", "+coins[i]);
                 dp[j] = Math.min(dp[j], dp[j-coins[i]]+1);
-                System.out.println("(i, j)=("+i+", "+j+"), dp[i]="+dp[i]+", dp[j]="+dp[j]);
+//                System.out.println("(i, j)=("+i+", "+j+"), dp[i]="+dp[i]+", dp[j]="+dp[j]);
             }
         }
         System.out.println(dp[k]== Integer.MAX_VALUE? -1 : dp[k]);

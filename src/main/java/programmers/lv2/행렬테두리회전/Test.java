@@ -17,8 +17,7 @@ public class Test {
         System.out.println();
         System.out.println("================================");
         pirnt2();
-
-    System.out.println();
+        System.out.println();
     }
 
     static void roate(){

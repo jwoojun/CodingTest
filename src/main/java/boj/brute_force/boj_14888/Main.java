@@ -36,7 +36,6 @@ public class Main {
             min = Math.min(result, min);
             return;
         }
-        System.out.println(result);
         if (add > 0) {
             dfs(result+numbers.get(count), count+1, add-1, subract, multiply, division);
         }
@@ -51,8 +50,6 @@ public class Main {
         if(division>0){
             dfs(result/numbers.get(count), count+1, add, subract, multiply, division-1);
         }
-
-
     }
 
     static class Input {
