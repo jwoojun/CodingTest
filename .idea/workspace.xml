@@ -4,65 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f172bc02-2a3b-4a6a-b510-abc43b1a0900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_11055/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_11722/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_12738/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1520/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1932/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/graph/dijak/boj_1238/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/graph/dijak/boj_1238/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/graph/dijak/boj_1753/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/graph/dijak/boj_1753/Main2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_1182/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_9663/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/string/boj_1076/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/string/boj_9012/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/two_pointer/boj_1806/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/fastcampus/boj_1260/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/lv1/모의고사/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/lv2/다리를지나는트럭/Practice.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/lv2/다리를지나는트럭/Solution.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/programmers/lv2/조이스틱/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.s" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_14888/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_14888/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_14888/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/brute_force/boj_14888/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_11053/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_11053/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_11053/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_11053/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2294/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2748/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_2748/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_4811/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_4811/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_4811/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_4811/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Main$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Main$Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Practice$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Practice$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Practice$Point.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Practice$Point.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Practice.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_16946/Practice.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/search/boj_9663/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/search/boj_9663/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/lv2/행렬테두리회전/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/programmers/lv2/행렬테두리회전/Test.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/이것이코딩테스트다/hanbit/impl/p115/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/이것이코딩테스트다/hanbit/impl/p115/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/이것이코딩테스트다/hanbit/impl/p118/Main$Input.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/이것이코딩테스트다/hanbit/impl/p118/Main$Robot.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/이것이코딩테스트다/hanbit/impl/p118/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/common/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/common/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_14888/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/brute_force/boj_14888/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_11053/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_11053/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2294/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2748/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_2748/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_4811/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_4811/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/search/boj_16946/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_16946/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/search/boj_16946/Practice.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_16946/Practice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/search/boj_9663/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/search/boj_9663/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/programmers/lv2/행렬테두리회전/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/programmers/lv2/행렬테두리회전/Test.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/이것이코딩테스트다/hanbit/impl/p115/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/이것이코딩테스트다/impl/p115/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/이것이코딩테스트다/hanbit/impl/p118/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/이것이코딩테스트다/impl/p118/Main.java" afterDir="false" />
-    </list>
+    <list default="true" id="f172bc02-2a3b-4a6a-b510-abc43b1a0900" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -318,9 +260,9 @@
       <item itemvalue="Application.Main (1)" />
       <item itemvalue="Application.Main (2)" />
       <item itemvalue="Application.Main2" />
+      <item itemvalue="Application.Solution" />
       <item itemvalue="Python.BOJ-15989" />
       <item itemvalue="Python.BOJ-2206" />
-      <item itemvalue="Application.Solution" />
     </list>
     <recent_temporary>
       <list>
@@ -580,7 +522,7 @@
       <workItem from="1634562217896" duration="40000" />
       <workItem from="1634610535423" duration="4683000" />
       <workItem from="1634629210037" duration="7411000" />
-      <workItem from="1634650783303" duration="3293000" />
+      <workItem from="1634650783303" duration="3619000" />
     </task>
     <servers />
   </component>
