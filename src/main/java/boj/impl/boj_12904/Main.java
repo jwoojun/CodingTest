@@ -70,9 +70,7 @@
 //
 //        for(int row=0; row<n; row++){
 //            for(int col=0; col<n; col++){
-//                if(board[row][col] != null && board[row][col].value != 0){
-//                    queue.add(board[row][col].value);
-//                }
+//
 //            }
 //            int index = 0;
 //            while(!queue.isEmpty()){
@@ -168,25 +166,14 @@
 //
 //
 //
-//    static int[][] copy(Block[][] board) {
+//    static int[][] copy(int[][] board) {
 //        int[][] copy = new int[n][n];
 //        for(int row=0; row<n; row++){
 //            for(int col=0; col<n; col++){
-//                copy[row][col] = board[row][col].value;
+//                copy[row][col] = board[row][col];
 //            }
 //        }
 //        return copy;
-//    }
-//
-//    static int getMax() {
-//        int value = Integer.MIN_VALUE;
-//        for (int row = 0; row < n; row++) {
-//            for (int col = 0; col < n; col++) {
-//                if(board[row][col]!=null)
-//                    value = Math.max(value, board[row][col].value);
-//            }
-//        }
-//        return value;
 //    }
 //
 //    static void findMaxBlock(){
