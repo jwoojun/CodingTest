@@ -8,10 +8,9 @@ import java.util.StringTokenizer;
 
 public class Main {
     static int n;
-    static int temp =0;
+    static int temp = 0;
     static Employee[] company;
     static int max = Integer.MIN_VALUE + 100000;
-    static int min = Integer.MAX_VALUE - 100000;
     static List<Employee> participants = new ArrayList<>();
     public static void main(String[] args) throws Exception {
         n = input.integer();
@@ -25,7 +24,6 @@ public class Main {
             company[i+1].boss = boss-1;
             company[boss-1].list.add(company[i+1]);
         }
-
 
         for(int i=1; i<n; i++){
             if(!participants.contains(company[i])){
@@ -49,9 +47,7 @@ public class Main {
         return !company[bossNo].participate && !company[bossNo].list.contains(employee);
     }
 
-
     static void dfs(int no, int count) {
-        participants.forEach(System.out::println);
         if(count == n-1){
             max = Math.max(max, temp);
             participants.clear();
@@ -73,10 +69,6 @@ public class Main {
                 }
             }
         }
-
-
-
-
     }
 
     static class Employee {

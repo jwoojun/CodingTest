@@ -5,21 +5,22 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f172bc02-2a3b-4a6a-b510-abc43b1a0900" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1623/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_4811/Other.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_5373/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_5373/Test.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_5373/TTT.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.s" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat.values.s" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/b85803a8-0508-41c9-8ca7-a9865bb5d116/entities/entities.dat_i" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_4811/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_4811/Main$Input.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_4811/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_4811/Main.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/lv1/모의고사/Solution$Student.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/programmers/lv1/모의고사/Solution$Student.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/classes/programmers/lv1/모의고사/Solution.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/programmers/lv1/모의고사/Solution.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_4811/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_4811/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_12904/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_12904/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1623/Main$Employee.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1623/Main$Employee.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1623/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1623/Main$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1623/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/dp/boj_1623/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_5373/Main$Input.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_5373/Main$Input.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_5373/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_5373/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_5373/Test.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/classes/boj/impl/boj_5373/Test.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1623/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/dp/boj_1623/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_5373/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_5373/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/boj/impl/boj_5373/Test.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/boj/impl/boj_5373/Test.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +56,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="JUnit5 Test Class" />
-        <option value="Python Script" />
         <option value="package-info" />
         <option value="Class" />
+        <option value="Python Script" />
       </list>
     </option>
   </component>
@@ -72,9 +73,6 @@
       <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
     </file-type-list>
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="cd7cbfea-8cac-4119-8814-f9e072214649" />
-  </component>
   <component name="GithubPullRequestsUISettings">
     <option name="selectedUrlAndAccountId">
       <UrlAndAccount>
@@ -84,6 +82,7 @@
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.9.jdk/Contents/Home/lib/src.zip!/java.base/java/util/Map.java" root0="SKIP_INSPECTION" />
     <setting file="jar:///Library/Java/JavaVirtualMachines/jdk-11.0.9.jdk/Contents/Home/lib/src.zip!/java.base/java/lang/Iterable.java" root0="SKIP_INSPECTION" />
   </component>
   <component name="ProblemsViewState">
@@ -116,7 +115,7 @@
     <property name="project.structure.side.proportion" value="0.375" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="org.jetbrains.plugins.github.ui.GithubSettingsConfigurable" />
+    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
@@ -151,7 +150,7 @@
       <recent name="boj.dp.boj_11055" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main (2)">
+  <component name="RunManager" selected="Application.Test">
     <configuration name="Java" type="Application" factoryName="Application">
       <option name="ALTERNATIVE_JRE_PATH" value="11" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
@@ -200,12 +199,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Solution" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="programmers.lv1.모의고사.Solution" />
+    <configuration name="TTT" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="boj.impl.boj_5373.TTT" />
       <module name="algorithm.main" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="programmers.lv1.모의고사.*" />
+          <option name="PATTERN" value="boj.impl.boj_5373.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -272,21 +271,21 @@
     </configuration>
     <list>
       <item itemvalue="Application.Java" />
-      <item itemvalue="Application.Solution" />
       <item itemvalue="Application.Main (3)" />
       <item itemvalue="Application.Test" />
       <item itemvalue="Application.Main" />
       <item itemvalue="Application.Main (2)" />
+      <item itemvalue="Application.TTT" />
       <item itemvalue="Python.BOJ-15989" />
       <item itemvalue="Python.BOJ-2206" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Test" />
+        <item itemvalue="Application.TTT" />
         <item itemvalue="Application.Main (2)" />
         <item itemvalue="Application.Main" />
-        <item itemvalue="Application.Test" />
         <item itemvalue="Application.Main (3)" />
-        <item itemvalue="Application.Solution" />
       </list>
     </recent_temporary>
   </component>
@@ -545,6 +544,11 @@
       <workItem from="1634949333615" duration="20394000" />
       <workItem from="1634994356987" duration="10000" />
       <workItem from="1634996165348" duration="3636000" />
+      <workItem from="1635087123583" duration="182000" />
+      <workItem from="1635192675294" duration="3159000" />
+      <workItem from="1635275909262" duration="2685000" />
+      <workItem from="1635482995743" duration="14530000" />
+      <workItem from="1635613115449" duration="1483000" />
     </task>
     <servers />
   </component>

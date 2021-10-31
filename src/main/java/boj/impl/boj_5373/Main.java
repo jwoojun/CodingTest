@@ -23,8 +23,6 @@ public class Main {
     clockwise(L);
     clockwise(R);
 
-
-
 //    counter_clockwise(L);
 //    counter_clockwise(D);
 //    clockwise(L);
@@ -63,7 +61,7 @@ public class Main {
     }
     // F
     int[][] arrayF = {
-            {L, 2, 2}, {L, 1, 2}, {L, 0, 2}, {U, 2, 0}, {U, 2, 1}, {U, 2, 2},
+            {L, 0, 2}, {L, 1, 2}, {L, 2, 2}, {U, 2, 2}, {U, 2, 1}, {U, 2, 0},
             {R, 0, 0}, {R, 1, 0}, {R, 2, 0}, {D, 0, 2}, {D, 0, 1}, {D, 0, 0}
     };
     // U
@@ -195,36 +193,6 @@ public class Main {
     cube[array[1][0]][array[1][1]][array[1][2]] = colorB;
     cube[array[2][0]][array[2][1]][array[2][2]] = colorC;
   }
-
-//  static void rotate(String[] array) {
-//    int count = array.length;
-//    System.out.println(count);
-//    for (int i = 0; i < count; i++) {
-//      boolean direction = array[i].charAt(1) == '+';
-//      System.out.println("Direction= "+array[i].charAt(0));
-//      switch (array[i].charAt(0)) {
-//        case 'U':
-//          change(U, direction);
-//          break;
-//        case 'D':
-//          change(D, direction);
-//          break;
-//        case 'F':
-//          change(F, direction);
-//          break;
-//        case 'B':
-//          change(B, direction);
-//          break;
-//        case 'L':
-//          change(L, direction);
-//          break;
-//        case 'R':
-//          change(R, direction);
-//          break;
-//      }
-//      print();
-//    }
-//  }
 
   static Input input = new Input();
 
